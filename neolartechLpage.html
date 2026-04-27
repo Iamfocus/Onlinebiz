@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neolartech — Build Your Business Website in 14 Days</title>
+<meta name="description" content="Neolartech builds premium business websites for Nigerian Instagram and WhatsApp sellers in 14 days, with Paystack payments, WhatsApp ordering, SEO setup, and 30-day support.">
+<meta name="theme-color" content="#E8420A">
+<meta property="og:title" content="Neolartech — Build Your Business Website in 14 Days">
+<meta property="og:description" content="A complete online business system for Nigerian sellers: website, Paystack payments, WhatsApp ordering, SEO setup, and launch support.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Neolartech — Build Your Business Website in 14 Days">
+<meta name="twitter:description" content="Premium business websites for Nigerian Instagram and WhatsApp sellers, delivered in 14 days.">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+<link rel="preload" as="image" href="assets/mockups/hero-whatsapp-website-mockup-1200.jpg" fetchpriority="high">
+<link href="https://fonts.bunny.net/css?family=instrument-serif:400,400i&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.bunny.net/css?family=plus-jakarta-sans:400,500,700,800&amp;display=swap" rel="stylesheet">
+<style>
+/* ─── RESET ─── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+img{max-width:100%;display:block}
+a{text-decoration:none}
+
+/* ─── TOKENS ─── */
+:root{
+  --orange:#E8420A;
+  --orange-h:#D63A08;
+  --orange-pale:#FFF3EF;
+  --orange-border:#FDDDD4;
+  --black:#141414;
+  --ink:#2A2A2A;
+  --dark:#181818;
+  --darker:#0F0F0F;
+  --warm:#FAFAF8;
+  --warm-off:#F5F3EF;
+  --warm-100:#EDE9E3;
+  --warm-200:#DDD9D3;
+  --gray-400:#B0ACA6;
+  --gray-500:#888480;
+  --gray-600:#5C5854;
+  --white:#FFFFFF;
+  --green:#16A34A;
+  --green-pale:#DCFCE7;
+  --wa:#25D366;
+  --sh-sm:0 1px 4px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+  --sh-md:0 4px 16px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.04);
+  --sh-lg:0 12px 40px rgba(0,0,0,.10),0 4px 12px rgba(0,0,0,.05);
+  --sh-xl:0 24px 64px rgba(0,0,0,.12),0 8px 24px rgba(0,0,0,.05);
+  --sh-or:0 8px 28px rgba(232,66,10,.28);
+}
+
+/* ─── BASE ─── */
+body{
+  font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+  background:var(--warm);
+  color:var(--black);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ─── TYPOGRAPHY ─── */
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400}
+.t-display{font-size:clamp(3rem,6.5vw,5.5rem);line-height:1.0;letter-spacing:-0.025em}
+.t-h1{font-size:clamp(2.5rem,5vw,4.25rem);line-height:1.05;letter-spacing:-0.025em}
+.t-h2{font-size:clamp(2rem,3.5vw,3.25rem);line-height:1.1;letter-spacing:-0.02em}
+.t-h3{font-size:clamp(1.4rem,2.5vw,2rem);line-height:1.15;letter-spacing:-0.02em}
+.t-body-xl{font-size:clamp(1.05rem,2.5vw,1.2rem);line-height:1.75;color:var(--gray-600)}
+.t-body{font-size:1rem;line-height:1.75;color:var(--gray-600)}
+.t-sm{font-size:0.875rem;line-height:1.65;color:var(--gray-600)}
+.t-xs{font-size:0.78rem;color:var(--gray-500)}
+.eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.t-h2.serif{
+  letter-spacing:-.012em;
+}
+.btn,.nav-links a,.faq-q{
+  letter-spacing:-.01em;
+}
+
+/* ─── LAYOUT ─── */
+.container{max-width:1200px;margin:0 auto;padding:0 5%}
+.section{padding:100px 0}
+.process-section,.mirror-section,.pain-section,.truth-section,.testi-section,.maths-section,.features-section,.guarantee-section,.portfolio-section,.pricing-section,.faq-section,.final-section,footer{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 900px;
+}
+.section-sm{padding:72px 0}
+
+/* ─── BUTTONS ─── */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;border:none;cursor:pointer;border-radius:10px;transition:all .18s;text-decoration:none}
+.btn-lg{padding:1rem 2rem;font-size:1rem}
+.btn-xl{padding:1.1rem 2.5rem;font-size:1.05rem}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:var(--sh-or)}
+.btn-orange:hover{background:var(--orange-h);transform:translateY(-2px);box-shadow:0 14px 40px rgba(232,66,10,.38)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 28px rgba(37,211,102,.28)}
+.btn-wa:hover{background:#1fb855;transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,.38)}
+.btn-outline{background:transparent;color:var(--black);border:1.5px solid var(--warm-200)}
+.btn-outline:hover{border-color:var(--black);background:var(--warm-off)}
+.btn-ghost{background:none;border:none;color:var(--black);font-weight:600;font-size:.95rem;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem;transition:gap .18s;padding:0}
+.btn-ghost:hover{gap:.6rem}
+
+/* ─── ANNOUNCE BAR ─── */
+.announce{
+  background:var(--orange);
+  padding:.7rem 5%;
+  display:flex;align-items:center;justify-content:center;gap:.75rem;
+  font-size:.85rem;font-weight:600;color:#fff;
+  position:relative;z-index:101;
+}
+.announce .live{width:8px;height:8px;border-radius:50%;background:#fff;animation:blink 1.5s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* ─── NAV ─── */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(250,250,248,.93);
+  backdrop-filter:blur(18px) saturate(200%);
+  border-bottom:1px solid var(--warm-100);
+  padding:0 5%;height:68px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:box-shadow .2s;
+}
+nav.scrolled{box-shadow:var(--sh-md)}
+.nav-logo{font-weight:900;font-size:1.2rem;letter-spacing:-.03em;color:var(--black)}
+.nav-logo span{color:var(--orange)}
+.nav-links{display:flex;gap:2.25rem;list-style:none}
+.nav-links a{font-size:.9rem;font-weight:500;color:var(--gray-600);transition:color .15s}
+.nav-links a:hover{color:var(--black)}
+.nav-cta{display:none}
+
+/* ─── HERO ─── */
+.hero{
+  padding:58px 0 84px;
+  background:var(--warm);
+  position:relative;overflow:hidden;
+}
+.hero-glow{
+  position:absolute;top:-180px;right:-200px;
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,66,10,.08) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-glow-2{
+  position:absolute;bottom:-80px;left:-150px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,66,10,.05) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1fr;
+  gap:2.4rem;align-items:center;text-align:center;
+}
+.hero-copy{
+  max-width:1120px;margin:0 auto;
+}
+
+/* Social proof chip */
+.proof-chip{
+  display:inline-flex;align-items:center;gap:.65rem;
+  background:#fff;border:1px solid var(--warm-100);border-radius:100px;
+  padding:.45rem 1rem .45rem .45rem;
+  box-shadow:var(--sh-md);margin-bottom:1.35rem;
+  font-size:.82rem;font-weight:600;color:var(--black);
+}
+.chip-avs{display:flex}
+.chip-av{
+  width:30px;height:30px;border-radius:50%;border:2px solid #fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.58rem;font-weight:900;margin-left:-8px;
+  color:#fff;flex-shrink:0;
+}
+.chip-av:first-child{margin-left:0}
+.av-1{background:linear-gradient(135deg,#f97316,#ea580c)}
+.av-2{background:linear-gradient(135deg,#8b5cf6,#7c3aed)}
+.av-3{background:linear-gradient(135deg,#10b981,#059669)}
+.av-4{background:linear-gradient(135deg,#f59e0b,#d97706)}
+.chip-stars{color:#F59E0B;font-size:.72rem}
+
+.hero h1{margin-bottom:1.2rem}
+.hero h1 em{font-style:italic;color:var(--orange)}
+.hero-headline{
+  font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+  font-size:clamp(2.65rem,4.75vw,4.65rem);
+  font-weight:750;
+  line-height:1.02;
+  letter-spacing:-.045em;
+  max-width:1120px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.hero-headline .price-lock{
+  color:var(--orange);
+  white-space:nowrap;
+}
+.hero-sub{max-width:720px;margin:0 auto 1.55rem}
+
+/* ─── EMOTIONAL MIRROR ─── */
+.mirror-section{
+  background:var(--darker);color:#fff;padding:92px 0;position:relative;overflow:hidden;
+}
+.mirror-section::before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 18% 10%,rgba(232,66,10,.16),transparent 34%),
+    linear-gradient(180deg,rgba(255,255,255,.04),transparent 36%);
+  pointer-events:none;
+}
+.mirror-inner{position:relative;z-index:1;max-width:880px;margin:0 auto}
+.mirror-kicker{color:var(--orange);margin-bottom:1rem}
+.mirror-title{
+  color:#fff;margin-bottom:1.2rem;max-width:780px;
+}
+.mirror-copy{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.25rem 2rem;margin-top:1.65rem;
+}
+.mirror-copy p{font-size:1rem;line-height:1.85;color:rgba(255,255,255,.68)}
+.mirror-copy strong{color:#fff;font-weight:750}
+.mirror-pull{
+  margin-top:1.8rem;padding:1.25rem 1.35rem;border-left:3px solid var(--orange);
+  background:rgba(255,255,255,.055);border-radius:0 16px 16px 0;
+  color:#fff;font-size:1.1rem;line-height:1.65;font-weight:650;
+}
+
+/* Hero CTAs */
+.hero-ctas{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:.85rem}
+.hero-microcopy{font-size:.82rem;font-weight:700;color:var(--gray-500);margin-bottom:1.25rem}
+
+/* Trust bar */
+.trust-bar{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;padding-top:1rem;border-top:1px solid var(--warm-100);max-width:760px;margin:0 auto}
+.trust-item{display:flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:500;color:var(--gray-600)}
+.trust-icon{color:var(--orange);display:flex;flex-shrink:0}
+
+/* ─── HERO VISUAL ─── */
+.hero-visual{position:relative;max-width:980px;width:100%;margin:.15rem auto 0}
+.hero-mockup-frame{
+  position:relative;
+  background:linear-gradient(180deg,#fff,rgba(255,248,241,.88));
+  border:1px solid var(--warm-100);
+  border-radius:28px;padding:.7rem;box-shadow:0 28px 80px rgba(23,23,23,.13);
+  overflow:hidden;
+}
+.hero-mockup-img{
+  display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;
+  border-radius:20px;border:1px solid var(--warm-100);
+}
+.hero-mockup-labels{
+  display:none;
+}
+.hero-mockup-label{
+  background:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.65);
+  box-shadow:var(--sh-sm);backdrop-filter:blur(12px);
+  border-radius:100px;padding:.42rem .78rem;
+  font-size:.62rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+}
+.hero-mockup-label.bad{color:#dc2626}
+.hero-mockup-label.good{color:var(--green)}
+.comp-wrap{display:flex;gap:.85rem;align-items:stretch}
+.comp-card{
+  flex:1;background:#fff;border:1px solid var(--warm-100);
+  border-radius:20px;padding:1.4rem;
+  box-shadow:var(--sh-xl);overflow:hidden;
+}
+.comp-badge{
+  display:inline-block;font-size:.62rem;font-weight:800;
+  letter-spacing:.09em;text-transform:uppercase;
+  padding:.28rem .7rem;border-radius:5px;margin-bottom:1rem;
+}
+.comp-badge.bad{background:#FEE2E2;color:#DC2626}
+.comp-badge.good{background:var(--green-pale);color:var(--green)}
+.chat{
+  background:var(--warm-off);border:1px solid var(--warm-100);
+  border-radius:10px;padding:.48rem .7rem;
+  font-size:.7rem;color:var(--gray-600);margin-bottom:.38rem;line-height:1.4;
+}
+.chat.faded{color:var(--gray-400);font-style:italic}
+.inbox-note{margin-top:.85rem;text-align:center;font-size:.68rem;font-weight:700;color:var(--orange)}
+.comp-arrow{
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  width:36px;height:36px;border-radius:50%;
+  background:#fff;border:1px solid var(--warm-100);
+  box-shadow:var(--sh-sm);font-size:.95rem;color:var(--gray-400);
+  align-self:center;
+}
+/* mini site */
+.ms{background:var(--warm-off);border-radius:12px;overflow:hidden;border:1px solid var(--warm-100);margin-bottom:.5rem}
+.ms-nav{background:#1a0e06;height:26px;display:flex;align-items:center;padding:0 .65rem;gap:.4rem}
+.ms-logo{font-size:.48rem;font-weight:900;color:#fff;letter-spacing:.05em;margin-right:auto}
+.ms-links{display:flex;gap:.4rem}
+.ms-links span{font-size:.38rem;color:rgba(255,255,255,.4);text-transform:uppercase;font-weight:600}
+.ms-hero{height:62px;background:linear-gradient(135deg,#2d1407,#5c2d10);display:flex;align-items:flex-end;padding:.55rem .6rem}
+.ms-hero h4{font-size:.54rem;font-weight:800;color:#fff;line-height:1.3}
+.ms-body{padding:.55rem .65rem}
+.ms-sub{font-size:.44rem;color:var(--gray-500);margin-bottom:.32rem;line-height:1.4}
+.ms-btn{display:inline-block;background:var(--orange);color:#fff;font-size:.42rem;font-weight:800;padding:.2rem .48rem;border-radius:4px;margin-bottom:.45rem}
+.ms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.28rem}
+.ms-prod{background:var(--warm-100);border-radius:4px;overflow:hidden}
+.ms-prod-img{height:28px}
+.ms-prod-price{font-size:.42rem;font-weight:700;padding:.16rem .26rem;color:var(--black)}
+.clean-note{text-align:center;font-size:.68rem;font-weight:700;color:var(--green);margin-top:.5rem}
+
+/* Floating badge */
+.float-badge{
+  position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
+  background:#fff;border:1px solid var(--warm-100);border-radius:100px;
+  box-shadow:var(--sh-lg);
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.55rem 1.1rem;font-size:.8rem;font-weight:700;color:var(--black);
+  white-space:nowrap;z-index:2;
+}
+.float-badge .fdot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 1.5s infinite}
+
+/* ─── SOCIAL PROOF STRIP ─── */
+.proof-strip{
+  background:#fff;border-top:1px solid var(--warm-100);border-bottom:1px solid var(--warm-100);
+  padding:48px 0;
+}
+.proof-strip-inner{
+  display:flex;align-items:center;gap:3rem;flex-wrap:wrap;
+  justify-content:space-between;
+}
+.proof-stat{text-align:center;flex:1;min-width:120px}
+.proof-stat .big{font-family:'Instrument Serif',serif;font-size:2.75rem;color:var(--black);line-height:1}
+.proof-stat .lbl{font-size:.82rem;color:var(--gray-500);margin-top:.35rem;line-height:1.4}
+.proof-divider{width:1px;height:48px;background:var(--warm-100);flex-shrink:0}
+
+/* ─── PROCESS ─── */
+.process-section{background:#fff;padding:92px 0;border-bottom:1px solid var(--warm-100)}
+.process-header{display:grid;grid-template-columns:.85fr 1fr;gap:3rem;align-items:end;margin-bottom:3.25rem}
+.process-header .t-h2{margin-top:1rem}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--warm-100);border:1px solid var(--warm-100);border-radius:22px;overflow:hidden;box-shadow:var(--sh-md)}
+.process-card{background:#fff;padding:2rem 1.5rem;min-height:245px;display:flex;flex-direction:column}
+.process-num{font-family:'Instrument Serif',serif;font-size:2.2rem;line-height:1;color:var(--orange);margin-bottom:1.35rem}
+.process-card h3{font-size:1rem;font-weight:800;margin-bottom:.65rem;line-height:1.3}
+.process-card p{font-size:.86rem;color:var(--gray-600);line-height:1.7}
+.process-note{margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--warm-off);border:1px solid var(--warm-100);border-radius:16px;padding:1.1rem 1.35rem}
+.process-note p{font-size:.9rem;color:var(--gray-600);line-height:1.6}
+.process-note strong{color:var(--black)}
+
+/* ─── PAIN ─── */
+.pain-section{background:var(--warm);padding:100px 0;border-top:1px solid var(--warm-100)}
+.pain-header{text-align:center;max-width:680px;margin:0 auto 4.5rem}
+.pain-header .t-h2{margin-top:1rem}
+.pain-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:0;background:var(--warm-100);
+  border-radius:24px;overflow:hidden;box-shadow:var(--sh-lg);
+}
+.pain-card{background:#fff;padding:2.25rem 2rem;transition:background .2s;position:relative;border-right:1px solid var(--warm-100);border-bottom:1px solid var(--warm-100)}
+.pain-card:hover{background:var(--warm-off)}
+.pain-card:nth-child(3n){border-right:none}
+.pain-card:nth-child(n+4){border-bottom:none}
+.pain-icon{
+  width:46px;height:46px;border-radius:13px;
+  background:var(--orange-pale);display:flex;align-items:center;justify-content:center;
+  color:var(--orange);margin-bottom:1.25rem;
+}
+.pain-card h3{font-size:1rem;font-weight:700;margin-bottom:.6rem;line-height:1.3}
+.pain-card p{font-size:.9rem;color:var(--gray-600);line-height:1.7}
+.pain-quote{
+  margin-top:.85rem;font-size:.8rem;font-style:italic;
+  color:var(--gray-400);padding-left:.85rem;
+  border-left:2.5px solid var(--warm-100);line-height:1.6;
+}
+
+/* ─── TRUTH ─── */
+.truth-section{background:var(--darker);padding:100px 0;position:relative;overflow:hidden}
+.truth-glow{
+  position:absolute;top:50%;left:5%;transform:translateY(-50%);
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,66,10,.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+.truth-inner{display:grid;grid-template-columns:1fr 1fr;gap:5.5rem;align-items:center;position:relative;z-index:1}
+.truth-eyebrow{color:var(--orange);margin-bottom:1.25rem}
+.truth-h{color:#fff;margin-bottom:1.5rem}
+.truth-h em{font-style:italic;color:var(--orange)}
+.truth-body{font-size:1.05rem;color:rgba(255,255,255,.5);line-height:1.8;margin-bottom:.6rem}
+.truth-note{
+  margin-top:1.75rem;padding:1.25rem 1.5rem;
+  border:1px solid rgba(255,255,255,.07);border-radius:14px;
+  background:rgba(255,255,255,.03);
+  font-size:.95rem;color:rgba(255,255,255,.4);font-style:italic;line-height:1.7;
+}
+.truth-bullets{display:flex;flex-direction:column;gap:.75rem;margin-bottom:1.5rem}
+.truth-bullet{
+  display:flex;align-items:flex-start;gap:1rem;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  border-radius:14px;padding:1.25rem 1.5rem;transition:background .2s;
+}
+.truth-bullet:hover{background:rgba(255,255,255,.07)}
+.tb-icon{color:var(--orange);flex-shrink:0;margin-top:2px}
+.tb-strong{font-size:1rem;font-weight:700;color:#fff;display:block;margin-bottom:.25rem}
+.tb-body{font-size:.87rem;color:rgba(255,255,255,.45);line-height:1.6}
+.truth-callout{
+  border:1px solid rgba(232,66,10,.3);border-radius:14px;
+  background:rgba(232,66,10,.07);padding:1.5rem;
+}
+.truth-callout p{font-size:.95rem;color:var(--orange);font-weight:600;line-height:1.6}
+
+/* ─── TESTIMONIALS ─── */
+.testi-section{padding:100px 0;background:var(--warm)}
+.testi-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:start}
+.testi-left .t-h2{margin-top:1rem;margin-bottom:1.25rem}
+.testi-left .t-body-xl{margin-bottom:0}
+
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--warm-100)}
+.stat-item{
+  background:#fff;border:1px solid var(--warm-100);border-radius:16px;
+  padding:1.05rem;box-shadow:var(--sh-sm);
+}
+.stat-item .big{font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;font-size:1.35rem;font-weight:850;color:var(--black);line-height:1}
+.stat-item .lbl{font-size:.76rem;color:var(--gray-500);margin-top:.42rem;line-height:1.45;max-width:130px}
+
+.testi-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.quote-card{
+  background:#fff;border:1px solid var(--warm-100);border-radius:22px;
+  padding:1.65rem;box-shadow:var(--sh-lg);position:relative;overflow:hidden;
+}
+.quote-card::before{
+  content:'';
+  position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--orange),rgba(232,66,10,.18));
+  pointer-events:none;
+}
+.quote-card::after{
+  content:'';position:absolute;top:0;right:0;
+  width:100px;height:100px;
+  background:radial-gradient(circle at top right,rgba(232,66,10,.04),transparent 70%);
+  pointer-events:none;
+}
+.quote-text{
+  font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+  font-size:.92rem;line-height:1.75;color:var(--gray-600);
+  font-style:normal;margin-bottom:1.35rem;padding-top:.15rem;
+}
+.quote-card h3{font-size:1.05rem;font-weight:850;letter-spacing:-.025em;line-height:1.25;margin-bottom:.7rem}
+.q-author{display:flex;align-items:center;gap:.9rem}
+.q-av{
+  width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--orange),#ff8c42);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:1rem;color:#fff;flex-shrink:0;
+}
+.q-av.b{background:linear-gradient(135deg,#8b5cf6,#7c3aed)}
+.q-name{font-size:.92rem;font-weight:700}
+.q-role{font-size:.78rem;color:var(--gray-500);margin-top:1px}
+.q-stars{color:#F59E0B;font-size:.82rem;margin-top:3px}
+.quote-card.sm{padding:1.65rem}
+.quote-card.sm .quote-text{font-size:.92rem;margin-bottom:1.35rem}
+.quote-card.after::before{background:linear-gradient(90deg,var(--green),rgba(34,197,94,.18))}
+.quote-card.after .q-av{background:linear-gradient(135deg,var(--green),#16a34a)}
+.flow-list{display:flex;flex-direction:column;gap:.6rem;margin-top:1rem;margin-bottom:1.25rem}
+.flow-item{
+  display:flex;align-items:flex-start;gap:.55rem;
+  font-size:.78rem;color:var(--gray-600);line-height:1.45;
+}
+.flow-dot{
+  width:18px;height:18px;border-radius:50%;
+  background:var(--orange-pale);color:var(--orange);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.72rem;font-weight:900;flex-shrink:0;margin-top:1px;
+}
+.quote-card.after .flow-dot{background:var(--green-pale);color:var(--green)}
+
+/* ─── MATHS ─── */
+.maths-section{
+  background:var(--warm-off);padding:100px 0;
+  border-top:1px solid var(--warm-100);border-bottom:1px solid var(--warm-100);
+  overflow-x:hidden;
+}
+.maths-header{margin-bottom:3.5rem;max-width:640px}
+.maths-header .t-h2{margin-top:1rem}
+.maths-header .t-body-xl{margin-top:.85rem}
+.maths-row{display:flex;align-items:center;gap:.85rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.math-blk{
+  background:#fff;border:1px solid var(--warm-100);border-radius:14px;
+  padding:1.35rem 1.6rem;text-align:center;box-shadow:var(--sh-sm);
+  transition:box-shadow .2s,transform .2s;
+}
+.math-blk:hover{box-shadow:var(--sh-md);transform:translateY(-2px)}
+.math-num{font-family:'Instrument Serif',serif;font-size:1.9rem;line-height:1;color:var(--black);letter-spacing:-.02em}
+.math-num.a{color:var(--orange)}
+.math-lbl{font-size:.72rem;color:var(--gray-500);margin-top:.28rem}
+.math-op{font-size:1.6rem;font-weight:900;color:var(--gray-400);flex-shrink:0}
+.maths-verdict{
+  background:#fff;border:1px solid var(--warm-100);border-radius:20px;
+  padding:2rem 2.25rem;box-shadow:var(--sh-md);
+  display:flex;align-items:flex-start;gap:1.5rem;
+}
+.verdict-icon{
+  width:52px;height:52px;border-radius:14px;
+  background:var(--orange-pale);display:flex;align-items:center;justify-content:center;
+  font-size:1.4rem;flex-shrink:0;
+}
+.verdict-h{font-size:1.1rem;font-weight:700;margin-bottom:.5rem;line-height:1.3}
+.verdict-h span{color:var(--orange)}
+.verdict-p{font-size:.92rem;color:var(--gray-600);line-height:1.7}
+
+/* ─── FEATURES ─── */
+.features-section{padding:100px 0;background:var(--warm)}
+.features-header{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:end;margin-bottom:3.5rem}
+.features-header .t-h2{margin-top:1rem}
+.feat-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:0;background:var(--warm-100);
+  border-radius:24px;overflow:hidden;box-shadow:var(--sh-lg);
+  margin-bottom:1.75rem;
+}
+.feat-card{background:#fff;padding:2rem;transition:background .2s;border-right:1px solid var(--warm-100);border-bottom:1px solid var(--warm-100)}
+.feat-card:hover{background:var(--warm-off)}
+.feat-card:nth-child(3n){border-right:none}
+.feat-card:nth-child(n+7){border-bottom:none}
+.feat-check{
+  width:30px;height:30px;border-radius:50%;
+  background:var(--green-pale);display:flex;align-items:center;justify-content:center;
+  color:var(--green);margin-bottom:1rem;flex-shrink:0;
+}
+.feat-card h3{font-size:.95rem;font-weight:700;margin-bottom:.38rem}
+.feat-card p{font-size:.83rem;color:var(--gray-600);line-height:1.65}
+.bonus-card{
+  background:linear-gradient(135deg,var(--orange-pale),#fff 55%);
+  border:1px solid var(--orange-border);border-radius:20px;
+  padding:2rem 2.25rem;display:flex;align-items:flex-start;gap:1.75rem;
+  box-shadow:var(--sh-md);
+}
+.bonus-pill{
+  background:var(--orange);color:#fff;
+  font-size:.62rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  padding:.32rem .8rem;border-radius:6px;white-space:nowrap;
+  flex-shrink:0;align-self:flex-start;margin-top:3px;
+}
+.bonus-h{font-size:1.05rem;font-weight:700;margin-bottom:.35rem}
+.bonus-p{font-size:.88rem;color:var(--gray-600);line-height:1.65}
+
+/* ─── PORTFOLIO PROOF ─── */
+.portfolio-section{background:var(--warm);padding:100px 0;border-top:1px solid var(--warm-100)}
+.portfolio-header{display:grid;grid-template-columns:.9fr 1fr;gap:3.5rem;align-items:end;margin-bottom:3.5rem}
+.portfolio-header .t-h2{margin-top:1rem}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.work-card{background:#fff;border:1px solid var(--warm-100);border-radius:20px;overflow:hidden;box-shadow:var(--sh-lg)}
+.work-preview{
+  background:var(--warm-off);padding:.8rem;border-bottom:1px solid var(--warm-100);
+  aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;
+}
+.mockup-img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;background:#fff;border-radius:14px;
+  border:1px solid var(--warm-100);box-shadow:var(--sh-sm);
+}
+.work-body{padding:1.35rem}
+.work-kicker{font-size:.68rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin-bottom:.55rem}
+.work-body h3{font-size:1rem;font-weight:800;line-height:1.35;margin-bottom:.55rem}
+.work-body p{font-size:.86rem;color:var(--gray-600);line-height:1.7;margin-bottom:1rem}
+.work-tags{display:flex;gap:.45rem;flex-wrap:wrap}
+.work-tags span{font-size:.68rem;font-weight:700;color:var(--gray-600);background:var(--warm-off);border:1px solid var(--warm-100);border-radius:100px;padding:.32rem .55rem}
+.outcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.35rem}
+.outcome-card{background:#fff;border:1px solid var(--warm-100);border-radius:16px;padding:1.25rem;box-shadow:var(--sh-sm)}
+.outcome-kicker{font-size:.66rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin-bottom:.5rem}
+.outcome-card h3{font-size:.98rem;font-weight:800;line-height:1.35;margin-bottom:.5rem}
+.outcome-card p{font-size:.84rem;color:var(--gray-600);line-height:1.65}
+.risk-stack{
+  margin-top:1.35rem;background:var(--black);color:#fff;border-radius:20px;
+  padding:1.5rem;display:grid;grid-template-columns:.9fr 1.2fr;gap:1.5rem;align-items:center;
+  box-shadow:var(--sh-lg);
+}
+.risk-stack h3{font-size:1.2rem;font-weight:800;line-height:1.35;margin-bottom:.45rem}
+.risk-stack p{font-size:.9rem;color:rgba(255,255,255,.58);line-height:1.65}
+.risk-points{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+.risk-point{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:.9rem}
+.risk-point strong{display:block;font-size:.82rem;color:#fff;margin-bottom:.25rem}
+.risk-point span{font-size:.74rem;color:rgba(255,255,255,.5);line-height:1.45}
+.portfolio-cta{margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#fff;border:1px solid var(--warm-100);border-radius:18px;padding:1.25rem 1.5rem;box-shadow:var(--sh-md)}
+.portfolio-cta p{font-size:.92rem;color:var(--gray-600);line-height:1.65}
+.portfolio-cta strong{color:var(--black)}
+
+/* ─── GUARANTEE BADGE ─── */
+.guarantee-section{background:var(--orange);padding:56px 0}
+.guarantee-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.guarantee-left{display:flex;align-items:center;gap:1.75rem}
+.g-seal{
+  width:88px;height:88px;border-radius:50%;
+  background:rgba(255,255,255,.15);
+  border:3px solid rgba(255,255,255,.35);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;flex-shrink:0;padding:.5rem;
+}
+.g-seal .g-num{font-family:'Instrument Serif',serif;font-size:1.9rem;color:#fff;line-height:1}
+.g-seal .g-label{font-size:.42rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-top:2px;line-height:1.3}
+.g-text h3{font-size:1.25rem;font-weight:700;color:#fff;margin-bottom:.4rem}
+.g-text p{font-size:.92rem;color:rgba(255,255,255,.75);line-height:1.65;max-width:440px}
+.guarantee-inner .btn-outline{border-color:rgba(255,255,255,.5);color:#fff;padding:.85rem 1.75rem;font-size:.9rem}
+.guarantee-inner .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+/* ─── PRICING ─── */
+.pricing-section{background:var(--darker);padding:100px 0;position:relative;overflow:hidden}
+.pricing-glow-1{position:absolute;top:-80px;right:-80px;width:450px;height:450px;border-radius:50%;background:radial-gradient(circle,rgba(232,66,10,.09),transparent 70%);pointer-events:none}
+.pricing-glow-2{position:absolute;bottom:-80px;left:-80px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(232,66,10,.06),transparent 70%);pointer-events:none}
+.pricing-header{text-align:center;margin-bottom:3.5rem;position:relative;z-index:1}
+.pricing-header .t-h2{color:#fff;margin-top:1rem}
+.pricing-header .t-body-xl{color:rgba(255,255,255,.5);margin-top:.85rem;max-width:560px;margin-left:auto;margin-right:auto}
+.pricing-header .t-h2{
+  font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:-.04em;
+  line-height:1.05;
+}
+.pricing-cards{display:grid;grid-template-columns:1.18fr .82fr;gap:1.25rem;max-width:1040px;margin:0 auto;position:relative;z-index:1}
+.p-card{
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);
+  border-radius:24px;padding:2.75rem;
+}
+.p-card.featured{
+  background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.055));
+  border-color:rgba(232,66,10,.5);position:relative;box-shadow:0 28px 90px rgba(0,0,0,.28);
+}
+.feat-badge-pill{
+  position:absolute;top:-15px;left:50%;transform:translateX(-50%);
+  background:var(--orange);color:#fff;
+  font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  padding:.32rem 1rem;border-radius:100px;
+  box-shadow:var(--sh-or);white-space:nowrap;
+}
+.p-top{display:flex;align-items:flex-start;justify-content:space-between;gap:1.25rem;margin-bottom:1.2rem}
+.p-kicker{font-size:.68rem;font-weight:850;letter-spacing:.09em;text-transform:uppercase;color:var(--orange);margin-bottom:.45rem}
+.p-old{font-size:.95rem;color:rgba(255,255,255,.28);text-decoration:line-through;margin-bottom:.25rem}
+.p-num{font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;font-size:3.25rem;font-weight:850;color:#fff;line-height:1;margin-bottom:.35rem;letter-spacing:-.055em}
+.p-note{font-size:.88rem;color:rgba(255,255,255,.5);margin-bottom:1.55rem;line-height:1.7;max-width:520px}
+.p-package{font-size:1.45rem;font-weight:850;color:#fff;margin-bottom:.35rem;line-height:1.2;letter-spacing:-.035em}
+.p-price-note{font-size:.74rem;font-weight:750;color:rgba(255,255,255,.42);text-align:right;line-height:1.35;max-width:130px}
+.p-value-band{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;
+  background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.07);
+  border-radius:16px;padding:.7rem;margin-bottom:1.55rem;
+}
+.p-value-item{padding:.65rem .7rem}
+.p-value-item strong{display:block;font-size:.82rem;color:#fff;margin-bottom:.25rem;line-height:1.25}
+.p-value-item span{display:block;font-size:.7rem;color:rgba(255,255,255,.42);line-height:1.45}
+.p-summary{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-bottom:1.75rem}
+.p-summary-item{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:.85rem}
+.p-summary-item span{display:block;font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.32);margin-bottom:.28rem}
+.p-summary-item strong{display:block;font-size:.88rem;color:rgba(255,255,255,.86);line-height:1.4}
+.p-includes{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:2rem}
+.p-include{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:1rem}
+.p-include h3{font-size:.82rem;font-weight:800;color:#fff;margin-bottom:.5rem;line-height:1.3}
+.p-include p{font-size:.76rem;color:rgba(255,255,255,.45);line-height:1.55}
+.p-bonus{
+  display:flex;align-items:flex-start;gap:1rem;
+  background:linear-gradient(135deg,rgba(232,66,10,.16),rgba(255,255,255,.045));
+  border:1px solid rgba(232,66,10,.3);border-radius:16px;
+  padding:1rem 1.1rem;margin:-.65rem 0 1.55rem;
+}
+.p-bonus-pill{
+  background:var(--orange);color:#fff;border-radius:100px;
+  padding:.32rem .65rem;font-size:.62rem;font-weight:850;
+  letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;
+  box-shadow:0 10px 24px rgba(232,66,10,.22);margin-top:2px;
+}
+.p-bonus h3{font-size:.88rem;font-weight:850;color:#fff;margin-bottom:.32rem;line-height:1.3}
+.p-bonus p{font-size:.76rem;color:rgba(255,255,255,.52);line-height:1.6}
+.p-perks{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-bottom:2.25rem}
+.p-perks li{display:flex;align-items:center;gap:.72rem;font-size:.9rem;color:rgba(255,255,255,.8)}
+.p-perks li::before{
+  content:'';width:20px;height:20px;flex-shrink:0;border-radius:50%;
+  background:rgba(22,163,74,.15);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%2322c55e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:center;
+}
+.p-guarantee{
+  display:flex;align-items:center;gap:.75rem;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);
+  border-radius:10px;padding:.95rem;margin-top:1.25rem;
+}
+.p-guarantee p{font-size:.78rem;color:rgba(255,255,255,.4);line-height:1.5}
+.p-guarantee strong{color:rgba(255,255,255,.7)}
+.shield-mark{
+  width:34px;height:34px;border-radius:10px;background:rgba(22,163,74,.14);
+  color:#22c55e;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.p-footer-note{font-size:.76rem;color:rgba(255,255,255,.38);text-align:center;margin-top:.85rem;line-height:1.5}
+
+/* Spots card */
+.spots-eyebrow{color:var(--orange);margin-bottom:.7rem}
+.spots-h{font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;font-size:1.65rem;font-weight:850;letter-spacing:-.035em;color:#fff;line-height:1.2;margin-bottom:.65rem}
+.spots-h span{color:var(--orange)}
+.spots-sub{font-size:.88rem;color:rgba(255,255,255,.4);line-height:1.65;margin-bottom:1.75rem}
+.dots-row{display:flex;gap:.42rem;flex-wrap:wrap;margin-bottom:.6rem}
+.sdot{width:28px;height:28px;border-radius:50%}
+.sdot.taken{background:var(--orange)}
+.sdot.open{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.15)}
+.spots-count{font-size:.8rem;color:rgba(255,255,255,.35);margin-bottom:1.75rem;display:flex;align-items:center;gap:.5rem}
+.spots-count strong{color:rgba(255,255,255,.7)}
+.ldot{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:blink 1.5s infinite;display:inline-block}
+.spots-nudge{font-size:.88rem;color:rgba(255,255,255,.35);line-height:1.75;margin-bottom:1.75rem;font-style:italic;border-left:2px solid rgba(232,66,10,.35);padding-left:1rem}
+.spots-inner{display:flex;flex-direction:column;justify-content:space-between;height:100%}
+.slot-list{display:flex;flex-direction:column;gap:.75rem;margin:1.35rem 0 1.75rem}
+.slot-item{display:flex;align-items:flex-start;gap:.65rem;font-size:.82rem;color:rgba(255,255,255,.56);line-height:1.5}
+.slot-check{
+  width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,.13);color:#22c55e;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.76rem;font-weight:900;margin-top:1px;
+}
+
+/* ─── FAQ ─── */
+.faq-section{padding:100px 0;background:var(--warm)}
+.faq-header{text-align:center;margin-bottom:3.5rem}
+.faq-header .t-h2{margin-top:1rem}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 5rem}
+.faq-item{border-bottom:1px solid var(--warm-100)}
+.faq-q{
+  width:100%;background:none;border:none;cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.35rem 0;font-family:'Plus Jakarta Sans',sans-serif;
+  font-size:.95rem;font-weight:600;color:var(--black);
+  text-align:left;gap:1rem;transition:color .15s;
+}
+.faq-q:hover{color:var(--orange)}
+.faq-icon{
+  width:26px;height:26px;flex-shrink:0;border:1.5px solid var(--warm-100);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;color:var(--gray-400);transition:all .22s;line-height:1;
+}
+.faq-item.open .faq-icon{background:var(--orange);border-color:var(--orange);color:#fff;transform:rotate(45deg)}
+.faq-a{overflow:hidden;max-height:0;transition:max-height .35s ease,padding .35s;font-size:.9rem;color:var(--gray-600);line-height:1.8}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:1.4rem}
+
+/* ─── FINAL CTA ─── */
+.final-section{
+  padding:120px 0;
+  background:var(--darker);border-top:1px solid rgba(255,255,255,.08);
+  text-align:center;position:relative;overflow:hidden;
+}
+.final-glow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:600px;height:400px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(232,66,10,.14),transparent 70%);
+  pointer-events:none;
+}
+.final-inner{max-width:760px;margin:0 auto;position:relative;z-index:1}
+.final-eyebrow{margin-bottom:1.25rem}
+.final-h{
+  margin-bottom:1.25rem;
+  font-family:'Plus Jakarta Sans','Inter',system-ui,sans-serif;
+  font-weight:800;
+  letter-spacing:-.045em;
+  line-height:1.02;
+  color:#fff;
+}
+.final-sub{font-size:1.1rem;color:rgba(255,255,255,.66);line-height:1.75;margin-bottom:2rem}
+.final-ctas{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.final-note{font-size:.86rem;color:rgba(255,255,255,.56);line-height:1.7;max-width:560px;margin:0 auto}
+.final-proof{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;
+  max-width:680px;margin:0 auto 2rem;
+}
+.final-proof-item{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-radius:16px;
+  padding:1rem;box-shadow:var(--sh-sm);text-align:left;
+}
+.final-proof-item strong{display:block;font-size:.82rem;font-weight:850;color:#fff;margin-bottom:.3rem}
+.final-proof-item span{display:block;font-size:.74rem;color:rgba(255,255,255,.5);line-height:1.45}
+.final-section .btn-outline{color:#fff;border-color:rgba(255,255,255,.28)}
+.final-section .btn-outline:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.55)}
+.s-row{margin-top:2.75rem;display:flex;align-items:center;justify-content:center;gap:.85rem}
+.s-avs{display:flex}
+.s-av{
+  width:32px;height:32px;border-radius:50%;border:2px solid var(--darker);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.6rem;font-weight:900;margin-left:-9px;color:#fff;
+}
+.s-av:first-child{margin-left:0}
+.s-av.a{background:linear-gradient(135deg,#f97316,#ea580c)}
+.s-av.b{background:linear-gradient(135deg,#8b5cf6,#7c3aed)}
+.s-av.c{background:linear-gradient(135deg,#10b981,#059669)}
+.s-av.d{background:linear-gradient(135deg,#f59e0b,#d97706)}
+.s-text{font-size:.86rem;color:rgba(255,255,255,.48)}
+.s-text strong{color:#fff}
+
+/* ─── FOOTER ─── */
+footer{
+  background:#fff;border-top:1px solid var(--warm-100);
+  padding:2rem 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+}
+.foot-logo{font-weight:900;font-size:1.1rem;letter-spacing:-.03em;color:var(--black)}
+.foot-logo span{color:var(--orange)}
+.foot-copy{font-size:.76rem;color:var(--gray-400)}
+.foot-links{display:flex;gap:1.75rem}
+.foot-links a{font-size:.78rem;color:var(--gray-500);transition:color .15s}
+.foot-links a:hover{color:var(--black)}
+
+/* ─── WHATSAPP STICKY ─── */
+.wa-sticky{
+  position:fixed;bottom:24px;right:24px;z-index:200;
+  display:flex;align-items:center;gap:.6rem;
+  background:var(--wa);color:#fff;
+  padding:.75rem 1.25rem;border-radius:100px;
+  font-size:.9rem;font-weight:700;
+  box-shadow:0 8px 28px rgba(37,211,102,.4);
+  text-decoration:none;
+  transition:all .2s;
+}
+.wa-sticky:hover{transform:translateY(-3px);box-shadow:0 16px 48px rgba(37,211,102,.5)}
+.wa-icon{width:22px;height:22px;flex-shrink:0}
+
+/* ─── ANIMATIONS ─── */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.reveal.in{opacity:1;transform:none}
+.d1{transition-delay:.07s}.d2{transition-delay:.14s}.d3{transition-delay:.21s}.d4{transition-delay:.28s}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-visual{max-width:860px;margin:0 auto}
+  .hero-mockup-labels{top:1.1rem;left:1.1rem;right:1.1rem}
+  .truth-inner{grid-template-columns:1fr;gap:3.5rem}
+  .testi-inner{grid-template-columns:1fr;gap:3.5rem}
+  .features-header{grid-template-columns:1fr;gap:1.5rem}
+  .pricing-cards{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr;gap:0}
+  .proof-strip-inner{justify-content:center;gap:2rem}
+  .proof-divider{display:none}
+  .process-header{grid-template-columns:1fr;gap:1.25rem}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+  .portfolio-header{grid-template-columns:1fr;gap:1.25rem}
+  .portfolio-grid{grid-template-columns:1fr}
+  .outcome-grid{grid-template-columns:1fr}
+  .risk-stack{grid-template-columns:1fr}
+  .risk-points{grid-template-columns:1fr}
+  .guarantee-inner{gap:2.5rem}
+  .testi-cards .quote-card.sm{display:block}
+}
+@media(max-width:768px){
+  /* Nav */
+  .nav-links{display:none}
+  .nav-cta{display:block;font-size:.82rem;padding:.55rem 1rem;border-radius:8px}
+
+  /* Hero */
+  .hero{padding:52px 0 68px}
+  .hero-sub{max-width:100%}
+  .hero-ctas{flex-direction:column;align-items:stretch;gap:.85rem}
+  .hero-ctas a,.hero-ctas .btn-ghost{width:100%;justify-content:center;text-align:center}
+  .trust-bar{gap:1rem}
+  .proof-chip{font-size:.78rem}
+  .hero-mockup-frame{border-radius:20px;padding:.45rem}
+  .hero-mockup-img{border-radius:15px}
+
+  /* Mirror */
+  .mirror-section{padding:64px 0}
+  .mirror-copy{grid-template-columns:1fr;gap:.9rem;margin-top:1.25rem}
+  .mirror-copy p{font-size:.94rem;line-height:1.72}
+  .mirror-pull{font-size:.98rem;line-height:1.6;padding:1rem 1.05rem}
+  .comp-card{padding:1rem;border-radius:16px}
+  .comp-wrap{gap:.55rem}
+  .comp-arrow{width:30px;height:30px;font-size:.8rem}
+  .chat:nth-of-type(n+6){display:none}
+
+  /* Sections */
+  .pain-section,.features-section,.testi-section,.maths-section,
+  .faq-section,.truth-section,.pricing-section,.process-section,.portfolio-section{padding:64px 0}
+  .final-section{padding:72px 0}
+  .final-proof{grid-template-columns:1fr}
+  .guarantee-section{padding:36px 0}
+
+  /* Announce */
+  .announce{font-size:.78rem;padding:.6rem 4%}
+
+  /* Proof strip */
+  .proof-strip{padding:36px 0}
+  .proof-stat .big{font-size:2.25rem}
+
+  /* Pain */
+  .pain-grid{grid-template-columns:1fr}
+  .pain-card{border-right:none!important;border-bottom:1px solid var(--warm-100)!important}
+  .pain-card:last-child{border-bottom:none!important}
+
+  /* Process */
+  .process-grid{grid-template-columns:1fr}
+  .process-card{min-height:auto;padding:1.55rem}
+  .process-note{flex-direction:column;align-items:flex-start}
+
+  /* Maths — vertical stacked list on mobile */
+  .maths-row{flex-direction:column;align-items:stretch;gap:.5rem}
+  .math-blk{display:flex;justify-content:space-between;align-items:center;text-align:left;padding:.9rem 1.1rem}
+  .math-num{font-size:1.45rem}
+  .math-op{display:none}
+  .math-blk:not(:last-child)::after{content:'↓';font-size:.85rem;color:var(--gray-400);font-weight:700}
+  .maths-verdict{flex-direction:column;gap:1rem}
+  .verdict-icon{width:44px;height:44px;font-size:1.1rem}
+
+  /* Features */
+  .features-header{grid-template-columns:1fr;gap:1.25rem}
+  .feat-grid{grid-template-columns:1fr 1fr}
+  .feat-card:nth-child(odd){border-right:1px solid var(--warm-100)!important}
+  .feat-card:nth-child(even){border-right:none!important}
+  .feat-card{border-bottom:1px solid var(--warm-100)!important}
+  .feat-card:nth-last-child(-n+2){border-bottom:none!important}
+  .bonus-card{flex-direction:column;gap:1rem}
+
+  /* Portfolio */
+  .portfolio-cta{flex-direction:column;align-items:flex-start}
+  .work-preview{aspect-ratio:16/10}
+
+  /* Guarantee */
+  .guarantee-inner{flex-direction:column;text-align:center;gap:1.5rem}
+  .guarantee-left{flex-direction:column;align-items:center;text-align:center;gap:1.25rem}
+  .g-text p{max-width:100%}
+
+  /* Testimonials */
+  .stats-row{gap:1rem}
+  .stat-item .big{font-size:1.35rem}
+  .testi-cards{grid-template-columns:1fr}
+  .testi-cards .quote-card.sm{display:block}
+
+  /* Pricing */
+  .spots-inner{height:auto;gap:2rem}
+  .p-card{padding:2rem 1.5rem}
+  .p-num{font-size:3rem}
+  .p-summary,.p-includes{grid-template-columns:1fr}
+  .p-value-band{grid-template-columns:1fr}
+  .p-top{flex-direction:column;gap:.65rem}
+  .p-price-note{text-align:left;max-width:100%}
+  .p-bonus{flex-direction:column;gap:.75rem}
+
+  /* Final CTA */
+  .final-ctas{flex-direction:column;align-items:stretch;gap:.85rem}
+  .final-ctas a{width:100%;justify-content:center}
+
+  /* WhatsApp sticky */
+  .wa-sticky{bottom:16px;right:16px;padding:.85rem}
+  .wa-sticky span{display:none}
+}
+@media(max-width:390px){
+  .container{padding:0 4%}
+  .t-h1{font-size:2rem;letter-spacing:-.02em}
+  .t-h2{font-size:1.7rem}
+  .proof-chip{flex-wrap:wrap;border-radius:12px;gap:.5rem}
+  .btn-xl{padding:.95rem 1.5rem;font-size:.95rem}
+  .trust-bar{flex-direction:column;gap:.75rem}
+  .proof-strip-inner{grid-template-columns:1fr 1fr}
+  .g-seal{width:72px;height:72px}
+  .g-num{font-size:1.6rem}
+  .spots-h{font-size:1.75rem}
+  .p-num{font-size:2.25rem}
+  .announce{font-size:.72rem}
+  .hero{padding:44px 0 60px}
+}
+@media(max-width:540px){
+  /* Typography */
+  .t-h1{font-size:2.2rem}
+  .t-h2{font-size:1.85rem}
+
+  /* Proof chip */
+  .proof-chip{font-size:.74rem;padding:.38rem .75rem .38rem .38rem}
+  .comp-wrap{flex-direction:column}
+  .comp-arrow{align-self:center;transform:rotate(90deg)}
+  .float-badge{position:static;transform:none;margin:1rem auto 0;white-space:normal;text-align:center;justify-content:center;max-width:320px}
+
+  /* Proof strip */
+  .proof-strip-inner{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+  .proof-stat .big{font-size:2rem}
+
+  /* Maths */
+  .math-blk{padding:.75rem 1rem}
+  .math-num{font-size:1.25rem}
+
+  /* Pricing */
+  .p-card{padding:1.75rem 1.25rem}
+  .p-num{font-size:2.6rem}
+  .p-perks li{font-size:.85rem}
+
+  /* Features */
+  .feat-grid{grid-template-columns:1fr}
+  .feat-card{border-right:none!important;border-bottom:1px solid var(--warm-100)!important}
+  .feat-card:last-child{border-bottom:none!important}
+  .feat-card:nth-last-child(-n+2){border-bottom:1px solid var(--warm-100)!important}
+  .feat-card:last-child{border-bottom:none!important}
+
+  /* Final section */
+  .final-section{padding:60px 0}
+  .final-h{font-size:2rem}
+  .final-proof{gap:.7rem}
+
+  /* FAQ */
+  .faq-q{font-size:.88rem}
+
+  /* Stats */
+  .stats-row{display:grid;grid-template-columns:1fr;gap:.85rem}
+}
+
+/* ─── MOBILE HERO POLISH ─── */
+@media(max-width:768px){
+  .hero{
+    padding:42px 0 58px;
+  }
+  .hero-inner{
+    gap:1.7rem;
+  }
+  .hero-copy{
+    max-width:100%;
+  }
+  .proof-chip{
+    margin-bottom:1.05rem;
+    max-width:100%;
+    justify-content:center;
+  }
+  .hero .eyebrow{
+    font-size:.68rem;
+    letter-spacing:.12em;
+  }
+  .hero h1{
+    max-width:620px;
+    margin:.7rem auto 1rem!important;
+    line-height:1.02;
+  }
+  .hero-headline{
+    font-size:2.55rem;
+    letter-spacing:-.04em;
+    line-height:1.02;
+  }
+  .hero-sub{
+    font-size:1rem;
+    line-height:1.65;
+    margin-bottom:1.2rem;
+  }
+  .hero-ctas{
+    margin-bottom:.65rem;
+  }
+  .hero-ctas .btn-xl{
+    min-height:56px;
+    border-radius:14px;
+    padding:1rem 1.15rem;
+  }
+  .hero-microcopy{
+    max-width:300px;
+    margin:.1rem auto 1rem;
+    font-size:.76rem;
+    line-height:1.55;
+  }
+  .trust-bar{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.6rem;
+    max-width:330px;
+    padding-top:.9rem;
+  }
+  .trust-item{
+    justify-content:center;
+    font-size:.78rem;
+  }
+  .hero-mockup-frame{
+    width:100%;
+    margin-left:0;
+    border-radius:18px;
+    padding:.38rem;
+  }
+  .hero-mockup-img{
+    border-radius:13px;
+  }
+  .float-badge{
+    font-size:.76rem;
+    padding:.52rem .85rem;
+    max-width:300px;
+  }
+  .wa-sticky{
+    width:52px;
+    height:52px;
+    justify-content:center;
+    bottom:14px;
+    right:14px;
+    padding:0;
+    opacity:0;
+    pointer-events:none;
+    transform:translateY(8px);
+  }
+  body.show-mobile-sticky .wa-sticky{
+    opacity:1;
+    pointer-events:auto;
+    transform:none;
+  }
+}
+
+@media(max-width:540px){
+  .container{padding:0 4.8%}
+  .t-h1{font-size:2.08rem}
+  .hero-headline{font-size:2.18rem}
+  .hero-sub{font-size:.96rem}
+  .mirror-title{font-size:2.05rem}
+  .proof-chip{
+    padding:.42rem .62rem;
+    border-radius:14px;
+    gap:.42rem;
+  }
+  .chip-av{width:27px;height:27px;font-size:.52rem}
+  .chip-stars{font-size:.66rem}
+  .hero-mockup-frame{
+    width:100%;
+    margin-left:0;
+    border-radius:16px;
+    padding:.32rem;
+  }
+  .hero-mockup-img{border-radius:12px}
+}
+
+@media(max-width:390px){
+  .t-h1{font-size:1.92rem}
+  .hero-headline{font-size:1.98rem;letter-spacing:-.04em}
+  .hero{padding:36px 0 52px}
+  .hero-sub{font-size:.93rem;line-height:1.6}
+  .hero-ctas .btn-xl{font-size:.9rem}
+  .hero-microcopy{font-size:.72rem}
+  .proof-chip span:last-child{flex-basis:100%;text-align:center}
+  .mirror-title{font-size:1.9rem}
+}
+
+/* ─── FULL PAGE MOBILE PREMIUM PASS ─── */
+@media(max-width:768px){
+  .container{
+    padding:0 6.2%;
+  }
+  .announce{
+    padding:.62rem 6.2%;
+    text-align:center;
+    line-height:1.45;
+  }
+  nav{
+    height:62px;
+    padding:0 6.2%;
+  }
+  .nav-logo{
+    font-size:1.05rem;
+  }
+  .nav-cta{
+    padding:.58rem .82rem;
+    font-size:.76rem;
+  }
+
+  .pain-section,.features-section,.testi-section,.maths-section,
+  .faq-section,.truth-section,.pricing-section,.process-section,.portfolio-section{
+    padding:56px 0;
+  }
+  .final-section{
+    padding:64px 0 72px;
+  }
+  .guarantee-section{
+    padding:34px 0;
+  }
+
+  .process-header,.features-header,.portfolio-header{
+    margin-bottom:1.75rem;
+  }
+  .pain-header,.maths-header,.faq-header,.pricing-header{
+    margin-bottom:2rem;
+  }
+  .t-h2{
+    line-height:1.08;
+  }
+  .t-body-xl{
+    font-size:.98rem;
+    line-height:1.65;
+  }
+  .eyebrow{
+    font-size:.68rem;
+    letter-spacing:.11em;
+  }
+
+  .proof-strip{
+    padding:28px 0;
+  }
+  .proof-strip-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:.8rem;
+  }
+  .proof-stat{
+    background:#fff;
+    border:1px solid var(--warm-100);
+    border-radius:16px;
+    padding:1rem .7rem;
+    box-shadow:var(--sh-sm);
+  }
+  .proof-stat .big{
+    font-size:1.85rem;
+  }
+  .proof-stat .lbl{
+    font-size:.72rem;
+  }
+
+  .process-grid,.pain-grid,.feat-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.85rem;
+    background:transparent;
+    border:0;
+    box-shadow:none;
+    border-radius:0;
+  }
+  .process-card,.pain-card,.feat-card{
+    border:1px solid var(--warm-100)!important;
+    border-radius:18px;
+    box-shadow:var(--sh-sm);
+  }
+  .process-card{
+    padding:1.35rem;
+    min-height:auto;
+  }
+  .pain-card,.feat-card{
+    padding:1.35rem;
+  }
+  .pain-quote{
+    font-size:.8rem;
+    line-height:1.55;
+  }
+  .bonus-card,.process-note,.portfolio-cta{
+    border-radius:18px;
+    padding:1.2rem;
+  }
+  .bonus-card{
+    box-shadow:var(--sh-sm);
+  }
+  .bonus-pill{
+    white-space:normal;
+  }
+
+  .truth-inner,.testi-inner{
+    gap:2rem;
+  }
+  .truth-note,.truth-bullet,.truth-callout,.quote-card{
+    border-radius:18px;
+    padding:1.2rem;
+  }
+  .truth-bullets{
+    gap:.7rem;
+  }
+  .quote-card::before,.quote-card::after{
+    opacity:.45;
+  }
+  .quote-text{
+    font-size:1.02rem;
+    line-height:1.55;
+  }
+  .stats-row{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:.8rem;
+    margin-top:1.6rem;
+    padding-top:1.4rem;
+  }
+  .stat-item{
+    background:#fff;
+    border:1px solid var(--warm-100);
+    border-radius:16px;
+    padding:1rem;
+    box-shadow:var(--sh-sm);
+  }
+
+  .maths-row{
+    gap:.65rem;
+  }
+  .math-blk{
+    border-radius:16px;
+    padding:1rem 1.1rem;
+  }
+  .maths-verdict{
+    border-radius:18px;
+    padding:1.35rem;
+  }
+
+  .work-card,.outcome-card,.risk-stack{
+    border-radius:18px;
+  }
+  .portfolio-grid,.outcome-grid{
+    gap:1rem;
+  }
+  .work-preview{
+    padding:.65rem;
+  }
+  .work-body{
+    padding:1.2rem;
+  }
+  .risk-stack{
+    padding:1.2rem;
+    gap:1rem;
+  }
+  .risk-points{
+    gap:.65rem;
+  }
+  .portfolio-cta .btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .p-card{
+    border-radius:20px;
+    padding:1.55rem 1.2rem;
+  }
+  .pricing-cards{
+    gap:1rem;
+  }
+  .p-num{
+    font-size:2.65rem;
+  }
+  .p-summary,.p-includes{
+    gap:.65rem;
+  }
+  .p-value-band{
+    grid-template-columns:1fr;
+    padding:.55rem;
+  }
+  .p-top{
+    flex-direction:column;
+    gap:.65rem;
+  }
+  .p-price-note{
+    text-align:left;
+    max-width:100%;
+  }
+  .p-summary-item,.p-include,.p-guarantee{
+    border-radius:14px;
+  }
+  .p-bonus{
+    border-radius:14px;
+    padding:1rem;
+  }
+  .spots-h{
+    font-size:1.8rem;
+  }
+  .dots-row{
+    gap:.34rem;
+  }
+  .sdot{
+    width:24px;
+    height:24px;
+  }
+
+  .faq-grid{
+    gap:0;
+  }
+  .faq-q{
+    padding:1.15rem 0;
+    font-size:.9rem;
+    line-height:1.45;
+  }
+  .faq-a{
+    font-size:.86rem;
+    line-height:1.65;
+  }
+
+  .final-inner{
+    padding:0 6.2%;
+  }
+  .final-sub{
+    font-size:.96rem;
+    line-height:1.7;
+  }
+  .final-proof-item{
+    padding:.9rem;
+  }
+  .s-row{
+    flex-direction:column;
+    gap:.7rem;
+    margin-top:2rem;
+  }
+  .s-text{
+    text-align:center;
+    line-height:1.55;
+  }
+
+  footer{
+    padding:1.5rem 6.2% 5.5rem;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .foot-links{
+    flex-direction:column;
+    gap:.55rem;
+  }
+}
+
+@media(max-width:540px){
+  .container{
+    padding:0 6.8%;
+  }
+  .hero-headline{
+    font-size:2.18rem;
+    line-height:1.03;
+  }
+  .hero-mockup-frame{
+    width:100%;
+    margin-left:0;
+  }
+  .proof-strip-inner{
+    grid-template-columns:1fr;
+  }
+  .proof-stat{
+    text-align:left;
+    display:grid;
+    grid-template-columns:auto 1fr;
+    align-items:center;
+    gap:.85rem;
+  }
+  .proof-stat .lbl{
+    margin-top:0;
+  }
+  .portfolio-cta,.process-note{
+    align-items:stretch;
+  }
+  .math-blk:not(:last-child)::after{
+    display:none;
+  }
+  .final-inner{
+    padding:0 6.8%;
+  }
+}
+
+@media(max-width:390px){
+  .container{
+    padding:0 6%;
+  }
+  .hero-headline{
+    font-size:1.98rem;
+    letter-spacing:-.04em;
+  }
+  .btn-xl{
+    padding:.95rem 1rem;
+  }
+  .p-card{
+    padding:1.35rem 1rem;
+  }
+  .final-inner{
+    padding:0 6%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Neolar<span>tech</span></a>
+  <ul class="nav-links">
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#features">What's Included</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQs</a></li>
+  </ul>
+  <a href="https://wa.me/2348034947502?text=Hi%2C%20I%27m%20interested%20in%20the%20website%20package" class="btn btn-lg btn-orange nav-cta" target="_blank" rel="noopener" data-cta="nav_whatsapp">Build My Website</a>
+</nav>
+
+<!-- ════════════════════ HERO ════════════════════ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Copy side -->
+      <div class="hero-copy">
+        <div class="proof-chip reveal">
+          <div class="chip-avs">
+            <div class="chip-av av-1">TA</div>
+            <div class="chip-av av-2">KO</div>
+            <div class="chip-av av-3">FA</div>
+            <div class="chip-av av-4">EM</div>
+          </div>
+          <span class="chip-stars">★★★★★</span>
+          <span>Trusted by 40+ Nigerian sellers</span>
+        </div>
+
+        <div class="eyebrow reveal d1">For Nigerian Business Owners</div>
+
+        <h1 class="t-h1 hero-headline reveal d2" style="margin-top:.85rem;margin-bottom:1.4rem">
+          Launch a <span class="price-lock">₦299,000</span> sales system for your Instagram/WhatsApp business in just 14 days.
+        </h1>
+
+        <p class="t-body-xl hero-sub reveal d3">
+          You have built something real on Instagram and WhatsApp. But if every sale still needs your personal reply, your business is only open when you are.
+        </p>
+
+        <div class="hero-ctas reveal d4">
+          <a href="https://wa.me/2348034947502?text=Hi%2C%20I%27m%20interested%20in%20building%20my%20website%20for%20%E2%82%A6299%2C000" class="btn btn-xl btn-wa" target="_blank" rel="noopener" data-cta="hero_whatsapp">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.847L.057 23.882a.5.5 0 0 0 .611.611l6.063-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.857 9.857 0 0 1-5.031-1.378l-.36-.214-3.733.897.913-3.638-.234-.373A9.9 9.9 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1c5.467 0 9.9 4.433 9.9 9.9 0 5.467-4.433 9.9-9.9 9.9z"/></svg>
+            Start My Website on WhatsApp
+          </a>
+          <a href="#how" class="btn-ghost" data-cta="hero_how_it_works">See how it works →</a>
+        </div>
+        <p class="hero-microcopy reveal d4">50% to start · 14-day delivery · final 50% only after approval</p>
+
+        <div class="trust-bar reveal d4">
+          <div class="trust-item">
+            <span class="trust-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            14-Day Delivery Guarantee
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            30-Day Support Included
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></span>
+            50% Only When You Love It
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual side -->
+      <div class="hero-visual">
+        <div class="hero-mockup-frame">
+          <div class="hero-mockup-labels">
+            <span class="hero-mockup-label bad">WhatsApp overload</span>
+            <span class="hero-mockup-label good">Website system</span>
+          </div>
+          <img class="hero-mockup-img" src="assets/mockups/hero-whatsapp-website-mockup-1200.jpg" width="1200" height="767" alt="Realistic mockup showing WhatsApp customer messages beside a premium ecommerce website system" fetchpriority="high" decoding="async">
+        </div>
+        <div class="float-badge">
+          <span class="fdot"></span>
+          2 orders received overnight · no DMs answered
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ PROOF STRIP ════ -->
+<div class="proof-strip">
+  <div class="container">
+    <div class="proof-strip-inner">
+      <div class="proof-stat reveal">
+        <div class="big serif">50+</div>
+        <div class="lbl">Nigerian businesses on the system</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat reveal d1">
+        <div class="big serif">14</div>
+        <div class="lbl">Day delivery guarantee</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat reveal d2">
+        <div class="big serif">₦3.6M</div>
+        <div class="lbl">Average annual loss from no website</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat reveal d3">
+        <div class="big serif">6 wks</div>
+        <div class="lbl">Average time clients recoup their investment</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ EMOTIONAL MIRROR ════ -->
+<section class="mirror-section">
+  <div class="container">
+    <div class="mirror-inner">
+      <div class="eyebrow mirror-kicker reveal">Before The Website</div>
+      <h2 class="t-h2 serif mirror-title reveal d1">You are not struggling because your business is small. You are tired because everything depends on you.</h2>
+      <div class="mirror-copy reveal d2">
+        <p>You wake up and reach for your phone before the day has even started. Prices, delivery questions, size checks, payment follow-ups, screenshots, reminders. The same questions you answered yesterday arrive again today.</p>
+        <p>Somewhere in that inbox is a customer who was ready to buy at 11pm. You were asleep. By morning, they had moved on, and you may never know that sale existed.</p>
+        <p>You have built a real business on apps designed for conversations. That is not your failure. It is a mismatch between the way customers now buy and the way your current system forces you to sell.</p>
+        <p><strong>The website is not just for looking professional.</strong> It is there to answer, guide, collect payment, and keep the buying path open when you are not online.</p>
+      </div>
+      <div class="mirror-pull reveal d3">That gap between where your business is and where it should be has a name: no sales system.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PAIN POINTS ════ -->
+<section class="pain-section">
+  <div class="container">
+    <div class="pain-header reveal">
+      <div class="eyebrow">Sound familiar?</div>
+      <h2 class="t-h2 serif">This is what running your business from DMs looks like every single day.</h2>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>You answer the same questions daily</h3>
+        <p>Price. Size. Availability. Delivery. Over and over, all day — taking up hours you don't have and energy you can't afford to lose.</p>
+        <p class="pain-quote">"How much is this?" — your 20th DM before 9am</p>
+      </div>
+      <div class="pain-card reveal d1">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></div>
+        <h3>You lose sales while you sleep</h3>
+        <p>Someone is ready to buy at 11pm. They message you. You're asleep. By morning they've moved on — permanently.</p>
+        <p class="pain-quote">That sale was real. You just never knew about it.</p>
+      </div>
+      <div class="pain-card reveal d2">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+        <h3>No catalogue. No information.</h3>
+        <p>Customers can't browse your products or stock without texting you first. Every single purchase needs your direct attention.</p>
+        <p class="pain-quote">Your shop only opens when you're awake.</p>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+        <h3>Payments are manual and messy</h3>
+        <p>You send account details. They say "I'll pay later." You follow up. They ghost. Stock sits reserved for no one.</p>
+        <p class="pain-quote">"I'll transfer now" — famous last words.</p>
+      </div>
+      <div class="pain-card reveal d1">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+        <h3>No data. No clarity. No control.</h3>
+        <p>You have no idea how many people visited, how many were interested, or why they left without buying. You're guessing.</p>
+        <p class="pain-quote">You're flying blind in your own business.</p>
+      </div>
+      <div class="pain-card reveal d2">
+        <div class="pain-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Your WhatsApp is a help desk</h3>
+        <p>Not for real conversations. Not for life. Just an endless stream of customer service enquiries you didn't sign up for.</p>
+        <p class="pain-quote">You became a business owner, not a call centre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PROCESS ════ -->
+<section class="process-section" id="how">
+  <div class="container">
+    <div class="process-header">
+      <div class="reveal">
+        <div class="eyebrow">How It Works</div>
+        <h2 class="t-h2 serif">A simple path from messy DMs to a working online sales system.</h2>
+      </div>
+      <p class="t-body-xl reveal d1">You do not need to figure out the tech. We collect what we need, build the system, connect payments, and guide you through launch.</p>
+    </div>
+    <div class="process-grid reveal">
+      <div class="process-card">
+        <div class="process-num">01</div>
+        <h3>Start on WhatsApp</h3>
+        <p>Tell us about your business, what you sell, and what currently slows down your customers when they try to buy.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">02</div>
+        <h3>Send your content</h3>
+        <p>We gather your products, photos, prices, brand details, delivery information, and payment setup requirements.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">03</div>
+        <h3>We build and connect it</h3>
+        <p>Your website, Paystack payments, WhatsApp order flow, SEO foundation, and key pages are built around your offer.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-num">04</div>
+        <h3>You review and launch</h3>
+        <p>We refine the site with your feedback, launch it, then send your management video and support you for 30 days.</p>
+      </div>
+    </div>
+    <div class="process-note reveal d1">
+      <p><strong>Payment structure:</strong> 50% starts the project. The final 50% is due when you approve the finished website.</p>
+      <a href="#pricing" class="btn-ghost" data-cta="process_pricing">See pricing →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TRUTH ════ -->
+<section class="truth-section">
+  <div class="truth-glow"></div>
+  <div class="container">
+    <div class="truth-inner">
+      <div class="reveal">
+        <div class="eyebrow truth-eyebrow">Here's The Hard Truth</div>
+        <h2 class="t-h2 serif truth-h">Instagram was built for <em>content.</em><br>WhatsApp was built for <em>chatting.</em></h2>
+        <p class="truth-body">You've been running a real business on tools that were never designed to handle one. That's not your fault. That's a mismatch.</p>
+        <p class="truth-body">And every day you keep doing it, it costs you more than you realise.</p>
+        <div class="truth-note">The businesses winning right now aren't smarter, more talented, or more hardworking than you. They simply have a system you don't have yet. That's the whole difference.</div>
+      </div>
+      <div class="reveal d1">
+        <div class="truth-bullets">
+          <div class="truth-bullet">
+            <span class="tb-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+            <div>
+              <span class="tb-strong">Sales you don't even know you're losing</span>
+              <p class="tb-body">Customers browse, get frustrated, and leave without buying. Silently. You never know they were there.</p>
+            </div>
+          </div>
+          <div class="truth-bullet">
+            <span class="tb-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></span>
+            <div>
+              <span class="tb-strong">Customers you'll never get a second chance with</span>
+              <p class="tb-body">Once they move on, they find someone who made it easier to buy. They don't come back.</p>
+            </div>
+          </div>
+          <div class="truth-bullet">
+            <span class="tb-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+            <div>
+              <span class="tb-strong">A business that looks smaller than it really is</span>
+              <p class="tb-body">No website signals you're not serious — even when you're doing real numbers every month.</p>
+            </div>
+          </div>
+        </div>
+        <div class="truth-callout">
+          <p>The businesses winning right now simply have a system you don't have yet. That's it. That's the whole secret.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TESTIMONIALS ════ -->
+<section class="testi-section">
+  <div class="container">
+    <div class="testi-inner">
+      <div class="testi-left reveal">
+        <div class="eyebrow">Where The Value Shows Up</div>
+        <h2 class="t-h2 serif">Your website should remove friction before the customer ever sends a DM.</h2>
+        <p class="t-body-xl">The goal is not just a prettier link in bio. It is a clearer buying path: product details, delivery answers, payment options, and the next step all in one place.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="big">24/7</div>
+            <div class="lbl">customers can browse without waiting for you</div>
+          </div>
+          <div class="stat-item">
+            <div class="big">5+</div>
+            <div class="lbl">common buying questions answered upfront</div>
+          </div>
+          <div class="stat-item">
+            <div class="big">1</div>
+            <div class="lbl">simple link for catalogue, trust, and checkout</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-cards reveal d1">
+        <div class="quote-card">
+          <h3>Before: every buyer needs your attention.</h3>
+          <p class="quote-text">Instagram creates interest, but WhatsApp becomes the whole sales desk. Customers ask for price, sizes, delivery, payment details, and proof before they feel ready.</p>
+          <div class="flow-list">
+            <div class="flow-item"><span class="flow-dot">!</span><span>Repeat questions fill your chat before serious buyers get served.</span></div>
+            <div class="flow-item"><span class="flow-dot">!</span><span>Manual payments and follow-ups slow down ready customers.</span></div>
+            <div class="flow-item"><span class="flow-dot">!</span><span>Late replies make the business feel less reliable than it really is.</span></div>
+          </div>
+          <div class="q-author">
+            <div class="q-av">TA</div>
+            <div>
+              <div class="q-name">DM-heavy selling</div>
+              <div class="q-role">Manual replies · Manual trust · Manual checkout</div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-card sm after">
+          <h3>After: the system answers first.</h3>
+          <p class="quote-text">Your site carries the information customers need to decide, then sends them to the right next action: browse, pay, order, or message with a specific request.</p>
+          <div class="flow-list">
+            <div class="flow-item"><span class="flow-dot">✓</span><span>Catalogue, prices, variants, delivery notes, and FAQs stay visible.</span></div>
+            <div class="flow-item"><span class="flow-dot">✓</span><span>Paystack checkout gives buyers a clean payment moment.</span></div>
+            <div class="flow-item"><span class="flow-dot">✓</span><span>WhatsApp becomes warmer, clearer, and closer to purchase.</span></div>
+          </div>
+          <div class="q-author">
+            <div class="q-av b">KO</div>
+            <div>
+              <div class="q-name">Website-led selling</div>
+              <div class="q-role">Catalogue · Trust pages · Checkout flow</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ MATHS ════ -->
+<section class="maths-section">
+  <div class="container">
+    <div class="maths-header reveal">
+      <div class="eyebrow">Let's Do The Maths.</div>
+      <h2 class="t-h2 serif">If your business makes ₦5,000 profit per order and you're losing just two sales a day…</h2>
+      <p class="t-body-xl">The numbers are not comfortable.</p>
+    </div>
+    <div class="maths-row reveal">
+      <div class="math-blk"><div class="math-num">₦5,000</div><div class="math-lbl">Profit per order</div></div>
+      <div class="math-op">×</div>
+      <div class="math-blk"><div class="math-num">2</div><div class="math-lbl">Lost sales daily</div></div>
+      <div class="math-op">=</div>
+      <div class="math-blk"><div class="math-num a">₦10,000</div><div class="math-lbl">Gone every day</div></div>
+      <div class="math-op">=</div>
+      <div class="math-blk"><div class="math-num a">₦300,000</div><div class="math-lbl">Lost per month</div></div>
+      <div class="math-op">=</div>
+      <div class="math-blk"><div class="math-num a">₦3,600,000</div><div class="math-lbl">Lost per year</div></div>
+    </div>
+    <div class="maths-verdict reveal">
+      <div class="verdict-icon">💡</div>
+      <div>
+        <div class="verdict-h"><span>₦299,000 isn't the cost of a website.</span> It's the cost of stopping the bleeding.</div>
+        <p class="verdict-p">Most of our clients recoup it within 6 weeks. Some within 2. The question isn't whether you can afford it — it's whether you can afford not to have it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FEATURES ════ -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="features-header">
+      <div class="reveal">
+        <div class="eyebrow">The Online Business Upgrade</div>
+        <h2 class="t-h2 serif">Everything you need. Built in 14 days. Done.</h2>
+      </div>
+      <p class="t-body-xl reveal d1">Built specifically for Instagram and WhatsApp sellers who are ready to stop running their business from their inbox.</p>
+    </div>
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Professional 8–10 page website</h3>
+        <p>Built around your brand. Converts visitors into paying customers around the clock.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Paystack payment integration</h3>
+        <p>Card, bank transfer, USSD — customers pay directly. No chasing, no "I'll pay later."</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>WhatsApp order button</h3>
+        <p>Still reachable — but only for real conversations, not basic price questions.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Instagram bio link page</h3>
+        <p>One link. All your products. Connect followers directly to your store.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Google Business Profile setup</h3>
+        <p>People searching in your city find you — not your competitors — first.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Full SEO foundation</h3>
+        <p>Speed, titles, meta — everything Google needs to rank and trust your site.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>30 days post-launch support</h3>
+        <p>Updates, tweaks, questions — all covered. You're not alone after we go live.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Site management video</h3>
+        <p>Update products, prices and photos yourself. No calls. No waiting. No fees.</p>
+      </div>
+    </div>
+    <div class="bonus-card reveal">
+      <span class="bonus-pill">Free Bonus</span>
+      <div>
+        <div class="bonus-h">Meta Ads Starter Guide — worth ₦50,000</div>
+        <p class="bonus-p">A complete step-by-step video walkthrough showing you exactly how to run your first Facebook and Instagram ad campaign and drive paying customers to your new website from day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ GUARANTEE SECTION ════ -->
+<section class="guarantee-section">
+  <div class="container">
+    <div class="guarantee-inner">
+      <div class="guarantee-left">
+        <div class="g-seal">
+          <div class="g-num serif">14</div>
+          <div class="g-label">Day Delivery<br>Guarantee</div>
+        </div>
+        <div class="g-text">
+          <h3>We deliver in 14 days — or we keep working for free.</h3>
+          <p>If we miss the deadline for any reason on our end, we keep working until it's done at absolutely no extra cost to you. No excuses. No extensions. Just results.</p>
+        </div>
+      </div>
+      <a href="https://wa.me/2348034947502?text=Hi%2C%20I%27m%20interested%20in%20the%20website%20package" class="btn btn-outline" target="_blank" rel="noopener" data-cta="guarantee_whatsapp">Claim Your Guarantee →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PORTFOLIO PROOF ════ -->
+<section class="portfolio-section">
+  <div class="container">
+    <div class="portfolio-header">
+      <div class="reveal">
+        <div class="eyebrow">Website Systems</div>
+        <h2 class="t-h2 serif">The package is built around the way your customers actually buy.</h2>
+      </div>
+      <p class="t-body-xl reveal d1">Every build is shaped around your products, payment flow, delivery details, and the questions customers ask before they commit.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <article class="work-card fashion reveal">
+        <div class="work-preview">
+          <img class="mockup-img" src="assets/mockups/luxe-wears-desktop-mockup-1200.jpg" width="1200" height="800" alt="Premium desktop ecommerce website mockup for Luxe Wears" loading="lazy" decoding="async">
+        </div>
+        <div class="work-body">
+          <div class="work-kicker">Fashion Store</div>
+          <h3>Catalogue, sizing, delivery info, and Paystack checkout.</h3>
+          <p>Built for sellers who need customers to browse styles, pick sizes, confirm availability, and pay without asking basic questions first.</p>
+          <div class="work-tags"><span>Product catalogue</span><span>Size guide</span><span>Paystack</span></div>
+        </div>
+      </article>
+
+      <article class="work-card skincare reveal d1">
+        <div class="work-preview">
+          <img class="mockup-img" src="assets/mockups/glow-lab-desktop-mockup-1200.jpg" width="1200" height="750" alt="Premium desktop ecommerce website mockup for Glow Lab" loading="lazy" decoding="async">
+        </div>
+        <div class="work-body">
+          <div class="work-kicker">Skincare Brand</div>
+          <h3>Product education, bundles, FAQs, and trust-building pages.</h3>
+          <p>Built for brands that need to explain ingredients, routines, delivery, payment options, and product fit before customers buy.</p>
+          <div class="work-tags"><span>Bundles</span><span>FAQs</span><span>SEO setup</span></div>
+        </div>
+      </article>
+
+      <article class="work-card food reveal d2">
+        <div class="work-preview">
+          <img class="mockup-img" src="assets/mockups/spice-bowl-desktop-mockup-1200.jpg" width="1200" height="750" alt="Premium desktop food ordering website mockup for Spice Bowl" loading="lazy" decoding="async">
+        </div>
+        <div class="work-body">
+          <div class="work-kicker">Food Business</div>
+          <h3>Menus, order prompts, location details, and WhatsApp handoff.</h3>
+          <p>Built for vendors who need customers to see meals, understand delivery windows, and start an order with the right details included.</p>
+          <div class="work-tags"><span>Menu pages</span><span>Order flow</span><span>WhatsApp CTA</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="outcome-grid">
+      <div class="outcome-card reveal">
+        <div class="outcome-kicker">Fashion Sellers</div>
+        <h3>Fewer “how much?” and “what size?” conversations.</h3>
+        <p>Your catalogue, size guide, prices, delivery notes, and checkout sit in one place so serious buyers can move without waiting for replies.</p>
+      </div>
+      <div class="outcome-card reveal d1">
+        <div class="outcome-kicker">Food Vendors</div>
+        <h3>Cleaner orders with the right details upfront.</h3>
+        <p>Menus, delivery windows, pickup notes, location details, and WhatsApp handoff help customers send complete orders from the start.</p>
+      </div>
+      <div class="outcome-card reveal d2">
+        <div class="outcome-kicker">Product Brands</div>
+        <h3>More trust before the customer asks to buy.</h3>
+        <p>Product education, FAQs, policies, payment options, and brand story make the business feel established before checkout.</p>
+      </div>
+    </div>
+
+    <div class="risk-stack reveal">
+      <div>
+        <div class="eyebrow" style="color:var(--orange)">Protected Investment</div>
+        <h3>You do not pay the full amount until you approve the finished website.</h3>
+        <p>The process is structured so you see progress, approve the finished website, and own the system after launch.</p>
+      </div>
+      <div class="risk-points">
+        <div class="risk-point">
+          <strong>50% to start</strong>
+          <span>The balance is only due after you approve the completed build.</span>
+        </div>
+        <div class="risk-point">
+          <strong>14-day guarantee</strong>
+          <span>If delay is on our end, we keep working at no extra cost.</span>
+        </div>
+        <div class="risk-point">
+          <strong>You own the site</strong>
+          <span>Launch support and a management video are included.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-cta reveal">
+      <p><strong>Your version will be built around your exact business.</strong> Products, pages, payment flow, delivery details, and customer questions are mapped before design starts.</p>
+      <a href="https://wa.me/2348034947502?text=Hi%2C%20I%27d%20like%20to%20see%20how%20my%20business%20website%20could%20look." class="btn btn-lg btn-orange" target="_blank" rel="noopener" data-cta="portfolio_preview">Preview My Build →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ PRICING ════ -->
+<section class="pricing-section" id="pricing">
+  <div class="pricing-glow-1"></div>
+  <div class="pricing-glow-2"></div>
+  <div class="container">
+    <div class="pricing-header reveal">
+      <div class="eyebrow" style="color:var(--orange)">The Complete Package</div>
+      <h2 class="t-h2 serif">Everything your Instagram business needs to start selling from a proper website.</h2>
+      <p class="t-body-xl">One fixed package for the website, payment flow, customer journey, trust pages, SEO foundation, and launch support.</p>
+    </div>
+
+    <div class="pricing-cards">
+      <!-- Main price card -->
+      <div class="p-card featured reveal">
+        <div class="feat-badge-pill">Signature Package</div>
+        <div class="p-top">
+          <div>
+            <div class="p-kicker">Online Sales System</div>
+            <div class="p-package">Instagram Business Website Launch</div>
+            <div class="p-old">Normally ₦480,000</div>
+            <div class="p-num">₦299,000</div>
+          </div>
+          <div class="p-price-note">Fixed project price. No hidden launch fees.</div>
+        </div>
+        <p class="p-note">Built for Nigerian Instagram and WhatsApp sellers who need a clean website customers can browse, trust, pay from, and message from without waiting for manual replies.</p>
+        <div class="p-value-band">
+          <div class="p-value-item">
+            <strong>Built for sales</strong>
+            <span>Not just a pretty page.</span>
+          </div>
+          <div class="p-value-item">
+            <strong>Launch-ready</strong>
+            <span>Pages, payments, and handoff.</span>
+          </div>
+          <div class="p-value-item">
+            <strong>Done with you</strong>
+            <span>Review, approval, and support.</span>
+          </div>
+        </div>
+        <div class="p-summary">
+          <div class="p-summary-item">
+            <span>Payment</span>
+            <strong>50% to start. 50% on approval.</strong>
+          </div>
+          <div class="p-summary-item">
+            <span>Timeline</span>
+            <strong>14-day delivery guarantee.</strong>
+          </div>
+        </div>
+        <div class="p-includes">
+          <div class="p-include">
+            <h3>Website Build</h3>
+            <p>Professional 8-10 page website built around your brand, products, and customer buying journey.</p>
+          </div>
+          <div class="p-include">
+            <h3>Sales Flow</h3>
+            <p>Paystack payments, WhatsApp order handoff, product pages, and clear customer action paths.</p>
+          </div>
+          <div class="p-include">
+            <h3>Visibility Setup</h3>
+            <p>SEO foundation, Instagram bio link page, and Google Business Profile setup for local trust.</p>
+          </div>
+          <div class="p-include">
+            <h3>Launch Support</h3>
+            <p>30 days of post-launch support plus a simple site management video so you know how to use the system.</p>
+          </div>
+        </div>
+        <div class="p-bonus">
+          <span class="p-bonus-pill">Free Bonus</span>
+          <div>
+            <h3>Meta Ads Starter Guide — worth ₦50,000</h3>
+            <p>A step-by-step video walkthrough showing how to run your first Facebook and Instagram ad campaign and send paying customers to your new website from day one.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/2348034947502?text=Hi%2C%20I%20want%20to%20build%20my%20website%20for%20%E2%82%A6299%2C000.%20Please%20let%27s%20get%20started." class="btn btn-xl btn-wa" style="width:100%;justify-content:center" target="_blank" rel="noopener" data-cta="pricing_whatsapp">
+          <svg style="width:20px;height:20px;flex-shrink:0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.847L.057 23.882a.5.5 0 0 0 .611.611l6.063-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.857 9.857 0 0 1-5.031-1.378l-.36-.214-3.733.897.913-3.638-.234-.373A9.9 9.9 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1c5.467 0 9.9 4.433 9.9 9.9 0 5.467-4.433 9.9-9.9 9.9z"/></svg>
+          Start on WhatsApp — ₦299,000
+        </a>
+        <div class="p-footer-note">50% starts the project. Final 50% is paid only after you approve the finished website.</div>
+        <div class="p-guarantee">
+          <span class="shield-mark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-5"/></svg></span>
+          <p><strong>14-Day Guarantee</strong> — we keep working at no extra cost if we miss the deadline.</p>
+        </div>
+      </div>
+
+      <!-- Spots card -->
+      <div class="p-card reveal d1">
+        <div class="spots-inner">
+          <div>
+            <div class="eyebrow spots-eyebrow">Limited Availability</div>
+            <div class="spots-h">Reserve one of the <span>4 remaining</span> April build slots</div>
+            <p class="spots-sub">We cap at 10 projects monthly so each build gets proper strategy, design, setup, and launch attention.</p>
+            <div class="dots-row">
+              <div class="sdot taken"></div><div class="sdot taken"></div><div class="sdot taken"></div>
+              <div class="sdot taken"></div><div class="sdot taken"></div><div class="sdot taken"></div>
+              <div class="sdot open"></div><div class="sdot open"></div>
+              <div class="sdot open"></div><div class="sdot open"></div>
+            </div>
+            <div class="spots-count">
+              <span class="ldot"></span>
+              <strong>6 / 10 April slots reserved</strong> · Limited intake
+            </div>
+            <div class="slot-list">
+              <div class="slot-item"><span class="slot-check">✓</span><span>We confirm your business fit and pages on WhatsApp first.</span></div>
+              <div class="slot-item"><span class="slot-check">✓</span><span>You only need your products, prices, photos, and delivery details to begin.</span></div>
+              <div class="slot-item"><span class="slot-check">✓</span><span>Next availability opens in May 2026 when April slots are full.</span></div>
+            </div>
+          </div>
+          <div>
+            <p class="spots-nudge">If this is already the month your business needs a cleaner sales system, secure the slot before sending payment details.</p>
+            <a href="https://wa.me/2348034947502?text=Hi%2C%20I%20want%20to%20secure%20my%20spot%20for%20the%20%E2%82%A6299%2C000%20website%20package." class="btn btn-xl btn-orange" style="width:100%;justify-content:center" target="_blank" rel="noopener" data-cta="pricing_slot_whatsapp">
+              Check My Slot →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FAQ ════ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="faq-header reveal">
+      <div class="eyebrow">Still Have Questions?</div>
+      <h2 class="t-h2 serif">Clear answers before you start.</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="reveal">
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">How does the 14-day timeline work? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">The 14 days starts after your deposit is confirmed and we have the core content needed to begin: products, prices, photos, delivery details, and brand information. If delay is on our end, we keep working at no extra cost until the build is completed.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">What do I need to send before we start? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">You need your product or service details, prices, photos if available, delivery information, brand name, contact details, policies, and any Instagram/WhatsApp links. If some content is missing, we help you structure what is needed before design starts.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">Will I be able to update the website myself? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">Yes. We include a simple site management video so you can update prices, change photos, edit basic content, and manage products without waiting on us for every small change.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">Does it include Paystack checkout? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">Yes. We connect Paystack so customers can pay through a cleaner checkout experience. If you do not already have a Paystack account, we guide you on what to prepare so the setup can move smoothly.</div>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">What does the payment structure look like? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">The total package is ₦299,000. You pay 50% to start, which is ₦149,500. The final 50% is paid after you review and approve the completed website, before final launch handover.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-6" id="faq-q-6">I'm not based in Lagos. Can you still help me? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-6" role="region" aria-labelledby="faq-q-6">Yes. The full process can happen remotely through WhatsApp, calls, shared documents, and online reviews. We can work with business owners across Nigeria and outside Nigeria as long as communication and content are clear.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="tf(this)" aria-expanded="false" aria-controls="faq-a-7" id="faq-q-7">Why only 10 clients per month? <span class="faq-icon">+</span></button>
+          <div class="faq-a" id="faq-a-7" role="region" aria-labelledby="faq-q-7">Because each project needs strategy, design, setup, review, and launch support. Limiting monthly intake keeps the work focused and helps us avoid rushed builds.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FINAL CTA ════ -->
+<section class="final-section">
+  <div class="final-glow"></div>
+  <div class="final-inner">
+    <div class="eyebrow final-eyebrow reveal">The Next Step</div>
+    <h2 class="t-h1 serif final-h reveal d1">Most people say “let me think about it” and go back to the same inbox.</h2>
+    <p class="final-sub reveal d2">The thinking does not answer customers at midnight. It does not collect payment while you sleep. It does not stop a ready buyer from choosing the seller with a clearer path to buy.</p>
+    <div class="final-proof reveal d2">
+      <div class="final-proof-item">
+        <strong>Only 4 April slots left</strong>
+        <span>When they are taken, the next available build slot opens in May 2026.</span>
+      </div>
+      <div class="final-proof-item">
+        <strong>50% to start</strong>
+        <span>Final 50% is paid after you review and approve the completed build.</span>
+      </div>
+      <div class="final-proof-item">
+        <strong>14-day delivery</strong>
+        <span>We keep working at no extra cost if delay is on our end.</span>
+      </div>
+    </div>
+    <div class="final-ctas reveal d3">
+      <a href="https://wa.me/2348034947502?text=Hi%2C%20I%27m%20ready%20to%20build%20my%20website.%20Let%27s%20talk." class="btn btn-xl btn-wa" target="_blank" rel="noopener" data-cta="final_whatsapp">
+        <svg style="width:20px;height:20px;flex-shrink:0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.847L.057 23.882a.5.5 0 0 0 .611.611l6.063-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.857 9.857 0 0 1-5.031-1.378l-.36-.214-3.733.897.913-3.638-.234-.373A9.9 9.9 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1c5.467 0 9.9 4.433 9.9 9.9 0 5.467-4.433 9.9-9.9 9.9z"/></svg>
+        Start on WhatsApp — ₦299,000
+      </a>
+      <a href="tel:+2348034947502" class="btn btn-xl btn-outline" data-cta="final_call">Call Us Instead</a>
+    </div>
+    <p class="final-note reveal d3">Every day you wait is another day a customer who was ready to buy may choose someone with a website instead.</p>
+    <div class="s-row reveal d4">
+      <div class="s-avs">
+        <div class="s-av a">TA</div><div class="s-av b">KO</div>
+        <div class="s-av c">FA</div><div class="s-av d">EM</div>
+      </div>
+      <div class="s-text">Join <strong>40+ Nigerian businesses</strong> already growing with a proper system</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">Neolar<span>tech</span></div>
+  <span class="foot-copy">© 2026 Neolartech. All rights reserved.</span>
+  <div class="foot-links">
+    <a href="https://wa.me/2348034947502" target="_blank" rel="noopener" data-cta="footer_whatsapp">+234 803 494 7502</a>
+    <a href="mailto:hello@neolartech.com" data-cta="footer_email">hello@neolartech.com</a>
+  </div>
+</footer>
+
+<!-- WHATSAPP STICKY BUTTON -->
+<a href="https://wa.me/2348034947502?text=Hi%2C%20I%27m%20interested%20in%20building%20my%20business%20website." class="wa-sticky" target="_blank" rel="noopener" data-cta="sticky_whatsapp" aria-label="Chat with Neolartech on WhatsApp">
+  <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.847L.057 23.882a.5.5 0 0 0 .611.611l6.063-1.457A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.857 9.857 0 0 1-5.031-1.378l-.36-.214-3.733.897.913-3.638-.234-.373A9.9 9.9 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1c5.467 0 9.9 4.433 9.9 9.9 0 5.467-4.433 9.9-9.9 9.9z"/></svg>
+  <span>Chat with us</span>
+</a>
+
+<script>
+  function tf(btn){
+    const item=btn.closest('.faq-item');
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{
+      i.classList.remove('open');
+      const question=i.querySelector('.faq-q');
+      if(question) question.setAttribute('aria-expanded','false');
+    });
+    if(!open){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  }
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')});
+  },{threshold:.07});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  document.querySelectorAll('[data-cta]').forEach(el=>{
+    el.addEventListener('click',()=>{
+      const ctaName=el.getAttribute('data-cta');
+      const ctaText=el.textContent.replace(/\s+/g,' ').trim();
+      window.dataLayer=window.dataLayer||[];
+      window.dataLayer.push({event:'cta_click',cta_name:ctaName,cta_text:ctaText});
+      if(typeof gtag==='function') gtag('event','cta_click',{cta_name:ctaName,cta_text:ctaText});
+      if(typeof fbq==='function') fbq('trackCustom','CTAClick',{cta_name:ctaName,cta_text:ctaText});
+    });
+  });
+
+  function updateScrollState(){
+    document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20);
+    document.body.classList.toggle('show-mobile-sticky',window.scrollY>520);
+  }
+  updateScrollState();
+  window.addEventListener('scroll',updateScrollState,{passive:true});
+</script>
+</body>
+</html>

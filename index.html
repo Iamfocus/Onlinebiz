@@ -84,7 +84,7 @@ body{
 /* ─── LAYOUT ─── */
 .container{max-width:1200px;margin:0 auto;padding:0 5%}
 .section{padding:100px 0}
-.process-section,.mirror-section,.pain-section,.truth-section,.testi-section,.maths-section,.features-section,.guarantee-section,.portfolio-section,.pricing-section,.faq-section,.final-section,footer{
+.process-section,.mirror-section,.pain-section,.truth-section,.testi-section,.maths-section,.features-section,.guarantee-section,.portfolio-section,.client-proof-section,.pricing-section,.faq-section,.final-section,footer{
   content-visibility:auto;
   contain-intrinsic-size:auto 900px;
 }
@@ -577,6 +577,167 @@ footer .brand-logo{width:142px}
 .portfolio-cta{margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#fff;border:1px solid var(--warm-100);border-radius:18px;padding:1.25rem 1.5rem;box-shadow:var(--sh-md)}
 .portfolio-cta p{font-size:.92rem;color:var(--gray-600);line-height:1.65}
 .portfolio-cta strong{color:var(--black)}
+
+/* ─── CLIENT PROOF ─── */
+.client-proof-section{
+  background:#fff;
+  padding:104px 0;
+  border-top:1px solid var(--warm-100);
+  border-bottom:1px solid var(--warm-100);
+}
+.client-proof-header{
+  display:grid;grid-template-columns:.8fr 1fr;gap:3rem;align-items:end;
+  margin-bottom:2.5rem;
+}
+.client-proof-header .t-h2{margin-top:1rem}
+.client-proof-header .t-body-xl{max-width:620px}
+.proof-note{
+  display:inline-flex;align-items:center;gap:.55rem;
+  background:var(--orange-pale);border:1px solid var(--orange-border);
+  color:var(--brand-brown);border-radius:100px;
+  padding:.55rem .9rem;font-size:.78rem;font-weight:800;
+  margin-top:1.15rem;
+}
+.proof-note span{width:7px;height:7px;border-radius:50%;background:var(--orange);display:inline-block}
+.client-proof-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.25rem;
+  align-items:start;
+}
+.client-proof-card{
+  background:#fff;
+  border:1px solid var(--warm-100);
+  border-radius:24px;
+  padding:1.2rem;
+  box-shadow:var(--sh-md);
+  display:grid;
+  gap:1.15rem;
+}
+.client-proof-card.featured{
+  grid-template-columns:1fr;
+  align-items:start;
+  background:linear-gradient(135deg,#fff,var(--brand-cream));
+}
+.client-proof-copy{
+  padding:.2rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:1rem;
+}
+.proof-tag{
+  display:inline-flex;
+  width:max-content;
+  background:var(--orange);
+  color:#15110A;
+  border-radius:100px;
+  padding:.36rem .72rem;
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.client-proof-copy h3{
+  font-size:clamp(1.25rem,2vw,1.85rem);
+  line-height:1.12;
+  letter-spacing:-.035em;
+  margin:.75rem 0 .6rem;
+}
+.client-proof-copy p{
+  color:var(--gray-600);
+  line-height:1.75;
+  font-size:.94rem;
+}
+.proof-quote{
+  border-left:3px solid var(--orange);
+  padding-left:1rem;
+  font-size:1rem!important;
+  color:var(--black)!important;
+  font-weight:750;
+  line-height:1.55!important;
+}
+.proof-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding-top:1rem;
+  border-top:1px solid var(--warm-100);
+  color:var(--gray-500);
+  font-size:.78rem;
+  font-weight:700;
+}
+.proof-shot{
+  background:#fff;
+  border:1px solid var(--warm-100);
+  border-radius:18px;
+  padding:.42rem;
+  min-height:0;
+  overflow:visible;
+}
+.proof-shot img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+  border-radius:14px;
+  border:1px solid var(--warm-100);
+  box-shadow:var(--sh-sm);
+}
+.client-proof-card.featured .proof-shot{max-width:440px;margin:0 auto}
+.client-proof-side{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.25rem;
+}
+.mini-proof-card{
+  background:#fff;
+  border:1px solid var(--warm-100);
+  border-radius:22px;
+  padding:1.05rem;
+  box-shadow:var(--sh-md);
+  display:grid;
+  grid-template-columns:.72fr 1fr;
+  gap:1.1rem;
+  align-items:start;
+}
+.mini-proof-card .proof-shot{border-radius:18px;padding:.42rem}
+.mini-proof-card .proof-shot img{border-radius:13px}
+.mini-proof-card h3{
+  font-size:1rem;
+  line-height:1.3;
+  letter-spacing:-.025em;
+  margin:.7rem 0 .45rem;
+}
+.mini-proof-card p{
+  color:var(--gray-600);
+  font-size:.82rem;
+  line-height:1.58;
+}
+.mini-proof-card .proof-tag{
+  font-size:.56rem;
+  padding:.3rem .58rem;
+}
+
+@media(max-width:1024px){
+  .client-proof-header{grid-template-columns:1fr;gap:1rem;margin-bottom:1.75rem}
+  .client-proof-grid{grid-template-columns:1fr}
+  .client-proof-side{grid-template-columns:1fr 1fr}
+  .mini-proof-card{grid-template-columns:1fr}
+}
+
+@media(max-width:768px){
+  .client-proof-section{padding:64px 0}
+  .client-proof-side{grid-template-columns:1fr}
+  .client-proof-card,.mini-proof-card{border-radius:18px;padding:.72rem}
+  .client-proof-copy{padding:.9rem}
+  .proof-meta{flex-direction:column;align-items:flex-start;gap:.35rem}
+}
+
+@media(max-width:390px){
+  .proof-quote{font-size:.98rem!important}
+}
 
 /* ─── GUARANTEE BADGE ─── */
 .guarantee-section{background:var(--brand-brown);padding:56px 0}
@@ -1970,6 +2131,76 @@ footer{
     <div class="portfolio-cta reveal">
       <p><strong>Your version will be built around your exact business.</strong> Products, pages, payment flow, delivery details, and customer questions are mapped before design starts.</p>
       <a href="https://wa.me/2348034947502?text=Hi%2C%20I%20want%20to%20check%20if%20a%20website%20build%20slot%20is%20available." class="btn btn-lg btn-orange" target="_blank" rel="noopener" data-cta="portfolio_check_slot">Check My Slot →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CLIENT PROOF ════ -->
+<section class="client-proof-section">
+  <div class="container">
+    <div class="client-proof-header">
+      <div class="reveal">
+        <div class="eyebrow">Client Proof</div>
+        <h2 class="t-h2 serif">Real WhatsApp feedback after websites go live.</h2>
+      </div>
+      <div class="reveal d1">
+     <!---   <p class="t-body-xl">Anonymised messages from business owners after launch: clearer websites, smoother checkout, better enquiries, and more trust from customers.</p> -->
+        <div class="proof-note"><span></span>Names and contact details hidden for privacy.</div>
+      </div>
+    </div>
+
+    <div class="client-proof-grid">
+      <article class="client-proof-card featured reveal">
+        <div class="proof-shot">
+          <img src="assets/testimonials/launch-7-enquiries.jpeg" width="853" height="1447" alt="Anonymised WhatsApp testimonial about getting 7 new enquiries within 3 hours of website launch" loading="lazy" decoding="async">
+        </div>
+        <div class="client-proof-copy">
+          <div>
+            <div class="proof-tag">Fast Results</div>
+            <h3>7 new enquiries within 3 hours of launch.</h3>
+            <p class="proof-quote">"Within just 3 hours, I got 7 new enquiries. That has never happened this fast before."</p>
+          </div>
+          <div class="proof-meta">
+            <span>Website launched same morning</span>
+            <span>WhatsApp feedback</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="client-proof-side">
+        <article class="mini-proof-card reveal d1">
+          <div class="proof-shot">
+            <img src="assets/testimonials/smooth-checkout.jpeg" width="958" height="1062" alt="Anonymised WhatsApp testimonial about smooth checkout and integrated payment feature" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <div class="proof-tag">Smooth Checkout</div>
+            <h3>Professional site, smooth payment flow.</h3>
+            <p>"The checkout process is smooth and I love the integrated payment feature."</p>
+          </div>
+        </article>
+
+        <article class="mini-proof-card reveal d2">
+          <div class="proof-shot">
+            <img src="assets/testimonials/better-enquiries.jpeg" width="941" height="1415" alt="Anonymised WhatsApp testimonial about better enquiries and more confident buyers" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <div class="proof-tag">Better Buyers</div>
+            <h3>Fewer questions, more confident enquiries.</h3>
+            <p>"Now everything is easier to understand and customers know exactly what to do."</p>
+          </div>
+        </article>
+
+        <article class="mini-proof-card reveal d3">
+          <div class="proof-shot">
+            <img src="assets/testimonials/professional-trustworthy.jpeg" width="768" height="974" alt="Anonymised WhatsApp testimonial about a professional and trustworthy website" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <div class="proof-tag">More Trust</div>
+            <h3>The business looks clearer and more trustworthy.</h3>
+            <p>"It looks so professional and trustworthy, exactly what my brand needed."</p>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
